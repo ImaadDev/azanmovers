@@ -13,10 +13,10 @@ export default function Header() {
   const navRef = useRef(null);
 
   const navigationItems = [
-    { name: 'Home', href: '/', active: pathname === '/' },
-    { name: 'About', href: '/about', active: pathname === '/about' },
+    { name: 'HOME', href: '/', active: pathname === '/' },
+    { name: 'ABOUT', href: '/about', active: pathname === '/about' },
     {
-      name: 'Services',
+      name: 'SERVICES',
       href: '/services',
       active: pathname?.startsWith('/services'),
       dropdown: [
@@ -28,9 +28,9 @@ export default function Header() {
         { name: 'Storage Solutions', href: '/services/storage', icon: '🏪' }
       ]
     },
-    { name: 'Blog', href: '/blogs', active: pathname?.startsWith('/blog') },
-    { name: 'Contact', href: '/contact', active: pathname === '/contact' },
-    { name: 'Faqs', href: '/faq', active: pathname === '/faq' }
+    { name: 'BLOGS', href: '/blogs', active: pathname?.startsWith('/blog') },
+    { name: 'CONTACT', href: '/contact', active: pathname === '/contact' },
+    { name: 'FAQS', href: '/faq', active: pathname === '/faq' }
 
   ];
 
@@ -99,7 +99,7 @@ export default function Header() {
         borderBottomColor: isScrolled ? 'rgba(237, 63, 39, 0.1)' : 'transparent'
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-0">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
@@ -123,76 +123,64 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
-            {navigationItems.map((item, index) => (
-              <div
-                key={item.name}
-                className="relative"
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link
-                  href={item.href}
-                  className={`group relative px-6 py-3 text-base font-semibold transition-all duration-300 hover:scale-105 focus:outline-none focus:scale-105 ${
-                    item.active
-                      ? 'text-white'
-                      : 'text-gray-700 hover:text-red-600'
-                  }`}
-                  style={{
-                    backgroundColor: item.active ? '#ED3F27' : 'transparent'
-                  }}
-                >
-                  <span className="flex items-center">
-                    {item.name}
-                    {item.dropdown && (
-                      <svg
-                        className={`w-4 h-4 ml-2 transition-transform duration-300 ${
-                          activeDropdown === index ? 'rotate-180' : ''
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    )}
-                  </span>
-                  
-                  {/* Clean active indicator */}
-                  {!item.active && (
-                    <div 
-                      className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-red-600 group-hover:w-full transition-all duration-300"
-                    />
-                  )}
-                </Link>
+       {/* Desktop Navigation */}
+<div className="hidden lg:flex items-center space-x-6">
+  {navigationItems.map((item, index) => (
+    <div
+      key={item.name}
+      className="relative"
+      onMouseEnter={() => handleMouseEnter(index)}
+      onMouseLeave={handleMouseLeave}
+    >
+      <Link
+        href={item.href}
+        className="relative px-4 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-red-600"
+      >
+        <span className="flex items-center">
+          {item.name}
+          {item.dropdown && (
+            <svg
+              className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+                activeDropdown === index ? 'rotate-180' : ''
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          )}
+        </span>
 
-                {/* Desktop Dropdown - Clean rectangular design */}
-                {item.dropdown && activeDropdown === index && (
-                  <div
-                    className="absolute top-full left-0 mt-2 w-72 bg-white/95 backdrop-blur-xl border border-gray-100 overflow-hidden animate-in slide-in-from-top-2 duration-300"
-                    style={{ zIndex: 1000 }}
-                  >
-                    <div className="py-2">
-                      {item.dropdown.map((subItem, subIndex) => (
-                        <Link
-                          key={subItem.name}
-                          href={subItem.href}
-                          className="group flex items-center px-6 py-4 text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-300 border-l-4 border-transparent hover:border-red-600"
-                        >
-                          <span className="text-xl mr-4">{subItem.icon}</span>
-                          <span className="font-medium flex-1">{subItem.name}</span>
-                          <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+        {/* Bottom line for active & hover */}
+        <span
+          className={`absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 ${
+            item.active ? 'w-full' : 'group-hover:w-full'
+          }`}
+        />
+      </Link>
+
+      {/* Desktop Dropdown */}
+      {item.dropdown && activeDropdown === index && (
+        <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-100 shadow-lg z-50">
+          <div className="py-2">
+            {item.dropdown.map((subItem) => (
+              <Link
+                key={subItem.name}
+                href={subItem.href}
+                className="flex items-center px-4 py-2 text-gray-700 hover:text-red-600 hover:bg-red-50 transition-colors duration-200"
+              >
+                <span className="mr-3 text-xl">{subItem.icon}</span>
+                <span className="font-medium">{subItem.name}</span>
+              </Link>
             ))}
           </div>
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
 
           {/* CTA & Mobile Menu Button */}
           <div className="flex items-center space-x-3">
