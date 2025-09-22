@@ -128,8 +128,8 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="font-semibold">24/7 Support</p>
-                    <a href="tel:+966123456789" className="hover:text-red-400 transition-colors duration-300">
-                      +966 12 345 6789
+                    <a href="tel:+966593694941" className="hover:text-red-400 transition-colors duration-300">
+                      +966 593694941
                     </a>
                   </div>
                 </div>
@@ -162,9 +162,9 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold">Service Area</p>
-                    <p>Saudi Arabia</p>
-                    <p className="text-sm">Licensed & Insured</p>
+                    <p className="font-semibold">Address</p>
+                    <p>Ibn Qasim Al Khawarizmi
+                    Al Bawadi, Jeddah 23443, Saudi Arabia,</p>
                   </div>
                 </div>
               </div>
@@ -222,16 +222,8 @@ export default function Footer() {
             <div className="mt-8 p-4 rounded-lg" style={{ background: 'rgba(237, 63, 39, 0.1)' }}>
               <h5 className="font-semibold text-white mb-3">Operating Hours</h5>
               <div className="space-y-2 text-sm text-gray-300">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>7:00 AM - 10:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday - Sunday</span>
-                  <span>8:00 AM - 9:00 PM</span>
-                </div>
                 <div className="flex justify-between font-semibold" style={{ color: '#ED3F27' }}>
-                  <span>Emergency Service</span>
+                  <span>Service</span>
                   <span>24/7 Available</span>
                 </div>
               </div>
@@ -290,14 +282,7 @@ export default function Footer() {
               <Link href="/sitemap" className="hover:text-white transition-colors duration-300">
                 Sitemap
               </Link>
-              <div className="flex items-center gap-2">
-                <svg className="w-4 h-4" style={{ color: '#ED3F27' }} fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
-                </svg>
-                <span className="font-semibold" style={{ color: '#ED3F27' }}>
-                  CR: 1234567890
-                </span>
-              </div>
+             
             </div>
           </div>
         </div>
