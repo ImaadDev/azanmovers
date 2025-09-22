@@ -1,25 +1,24 @@
-import Head from "next/head";
 import Link from "next/link";
 
 // Sample blog posts (frontend only)
 const blogPosts = [
   {
     id: 1,
-    title: "Tips for a Stress-Free House Moving in Jeddah",
+    title: "Tips for a Stress-Free House Moving in Saudi Arabia",
     date: "2025-09-21",
     description: "Learn essential tips to make your house moving smooth and stress-free.",
     slug: "stress-free-house-moving"
   },
   {
     id: 2,
-    title: "Office Relocation Checklist for Businesses",
+    title: "Office Relocation Checklist for Businesses in Saudi Arabia",
     date: "2025-09-20",
     description: "A complete checklist for relocating your office without disrupting work.",
     slug: "office-relocation-checklist"
   },
   {
     id: 3,
-    title: "How to Safely Dismantle and Move Furniture",
+    title: "How to Safely Dismantle and Move Furniture in Saudi Arabia",
     date: "2025-09-19",
     description: "Step-by-step guide to dismantle and move furniture safely.",
     slug: "how-to-safely-dismantle"
@@ -64,47 +63,7 @@ export default function BlogPage() {
   };
 
   return (
-    <>
-      <Head>
-        <title>Blog – Moving Tips & Guides | Azan Packers & Movers Jeddah</title>
-        <meta
-          name="description"
-          content="Explore the Azan Packers & Movers blog for moving tips, office relocation checklists, and furniture dismantling guides in Jeddah."
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.azanmovers.com/blogs" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Blog – Azan Packers & Movers" />
-        <meta
-          property="og:description"
-          content="Moving tips, relocation checklists, and furniture guides from Azan Packers & Movers Jeddah."
-        />
-        <meta property="og:url" content="https://www.azanmovers.com/blogs" />
-        <meta property="og:image" content="https://www.azanmovers.com/logo.png" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Blog – Azan Packers & Movers" />
-        <meta
-          name="twitter:description"
-          content="Helpful moving tips, relocation checklists, and guides by Azan Packers & Movers in Jeddah."
-        />
-        <meta name="twitter:image" content="https://www.azanmovers.com/logo.png" />
-
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
-        />
-      </Head>
-
-      <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
+    <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-5">
           <div
@@ -155,7 +114,7 @@ export default function BlogPage() {
               style={{ color: '#6B7280' }}
             >
               Stay informed with our latest articles on stress-free moving, office relocations,
-              and furniture handling in Jeddah.
+              and furniture handling in Saudi Arabia.
             </p>
           </header>
 
@@ -228,6 +187,5 @@ export default function BlogPage() {
           </section>
         </div>
       </main>
-    </>
   );
 }

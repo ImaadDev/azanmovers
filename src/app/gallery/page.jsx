@@ -58,7 +58,7 @@ export default function GalleryPage() {
              style={{ color: '#6B7280' }}
           >
             Explore our gallery showcasing professional house moving, office relocation,
-            and expert furniture handling services in Jeddah.
+            and expert furniture handling services in Saudi Arabia.
           </p>
         </header>
 

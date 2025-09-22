@@ -5,14 +5,14 @@ import { useState, useEffect, useRef } from 'react';
 const faqData = [
   {
     id: 1,
-    question: "How much does house moving cost in Jeddah?",
-    answer: "The cost depends on factors such as the size of your home, distance, and specific services required. Contact Azan Packers & Movers for a free, personalized moving quote in Jeddah.",
+    question: "How much does house moving cost in Saudi Arabia?",
+    answer: "The cost depends on factors such as the size of your home, distance, and specific services required. Contact Azan Packers & Movers for a free, personalized moving quote in Saudi Arabia.",
     category: "Pricing"
   },
   {
     id: 2,
     question: "Do you provide professional office relocation services?",
-    answer: "Yes, we specialize in office relocation in Jeddah. Our expert team ensures minimal downtime, safe equipment handling, and smooth business transitions.",
+    answer: "Yes, we specialize in office relocation in Saudi Arabia. Our expert team ensures minimal downtime, safe equipment handling, and smooth business transitions.",
     category: "Services"
   },
   {
@@ -24,13 +24,13 @@ const faqData = [
   {
     id: 4,
     question: "Are my belongings insured during the move?",
-    answer: "Yes. We take full responsibility for your belongings and offer insurance options for added peace of mind during your house or office move in Jeddah.",
+    answer: "Yes. We take full responsibility for your belongings and offer insurance options for added peace of mind during your house or office move in Saudi Arabia.",
     category: "Safety"
   },
   {
     id: 5,
-    question: "What areas do you serve in Jeddah?",
-    answer: "We serve all major areas in Jeddah, including Al Aziziyah, Al Hamra, Al Rawdah, Al Salamah, and surrounding districts. Contact us to confirm service in your specific location.",
+    question: "What areas do you serve in Saudi Arabia?",
+    answer: "We serve all major areas in Saudi Arabia, including Al Aziziyah, Al Hamra, Al Rawdah, Al Salamah, and surrounding districts. Contact us to confirm service in your specific location.",
     category: "Coverage"
   },
   {

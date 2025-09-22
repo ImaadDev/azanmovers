@@ -1,14 +1,14 @@
 # Azan Movers Website
 
 ## Project Title
-Azan Movers - Professional Moving & Relocation Services in Jeddah
+Azan Movers - Professional Moving & Relocation Services in Saudi Arabia
 
 ## Description
-Azan Movers is a modern, responsive website built with Next.js and Tailwind CSS, designed for a professional moving and relocation company based in Jeddah, Saudi Arabia. The website showcases available services (house moving, office relocation, furniture assembly/dismantling, packing, storage), features a gallery, a blog section, an FAQ section, and a dedicated contact page with a free quotation form. It's built with SEO best practices in mind, utilizing Next.js Metadata API for improved search engine visibility.
+Azan Movers is a modern, responsive website built with Next.js and Tailwind CSS, designed for a professional moving and relocation company based in Saudi Arabia. The website showcases available services (house moving, office relocation, furniture assembly/dismantling, packing, storage), features a gallery, a blog section, an FAQ section, and a dedicated contact page with a free quotation form. It's built with SEO best practices in mind, utilizing Next.js Metadata API for improved search engine visibility.
 
 ## Features
 - **Responsive Design:** Optimized for various devices (mobile, tablet, desktop).
-- **Service Pages:** Detailed pages for each moving service offered.
+- **Service Pages:** Detailed pages for each moving service offered for homes, villas, and offices.
 - **Image Gallery:** A dedicated section to showcase company work and professionalism.
 - **Blog Section:** For articles and updates related to moving and company news.
 - **FAQ Section:** Answers to common questions about moving services.

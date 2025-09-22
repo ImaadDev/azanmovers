@@ -75,7 +75,7 @@ export default function Hero() {
             >
               {words[currentWord]}
             </span>
-            <span className="ml-3">Moving Partner in Jeddah</span>
+            <span className="ml-3">Moving Partner in Saudi Arabia</span>
           </div>
 
           {/* SEO-optimized description */}
@@ -85,7 +85,7 @@ export default function Hero() {
             }`}
             style={{ color: '#6B7280' }}
           >
-            Professional packing and moving services in Jeddah, Saudi Arabia. 
+            Professional packing and moving services in Saudi Arabia. 
             Safe, efficient, and affordable relocation solutions for homes and offices. 
             Licensed and insured movers with 24/7 customer support.
           </p>

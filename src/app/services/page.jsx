@@ -9,7 +9,7 @@ export default function ServicesPage() {
       id: 1,
       name: "House Moving",
       description:
-        "Our professional house moving services in Saudi Arabia ensure a smooth relocation. From packing and loading to transport and unpacking, we handle your belongings with utmost care.",
+        "Our professional house and villa moving services in Saudi Arabia ensure a smooth relocation. From packing and loading to transport and unpacking, we handle your belongings with utmost care.",
       href: "/services/house-moving",
       icon: (
         <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ export default function ServicesPage() {
       id: 2,
       name: "Office Relocation",
       description:
-        "Minimize downtime with our reliable office relocation in Saudi Arabia. We dismantle, pack, and move your office furniture, electronics, and documents safely and efficiently.",
+        "Minimize downtime with our reliable office and commercial relocation in Saudi Arabia. We dismantle, pack, and move your office furniture, electronics, and documents safely and efficiently.",
       href: "/services/office-relocation",
       icon: (
         <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -271,7 +271,7 @@ export default function ServicesPage() {
              style={{ color: '#6B7280' }}
           >
             We offer comprehensive moving services designed to make your relocation
-            effortless, safe, and efficient in Saudi Arabia.
+            effortless, safe, and efficient for homes, villas, and offices in Saudi Arabia.
           </p>
         </header>
 

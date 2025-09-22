@@ -26,42 +26,7 @@ export default function HomeServices() {
       description: "Expert furniture disassembly and reassembly services ensuring your valuable pieces are moved safely and efficiently.",
       features: ["Expert Assembly", "Safe Handling", "Tool Provided"]
     },
-    {
-      name: "Packing Services",
-      href: "/services/packing",
-      description: "Professional packing services using high-quality materials to ensure the safety of your belongings during transit.",
-      features: ["Fragile Item Care", "Secure Boxing", "Labeling & Inventory"]
-    },
-    {
-      name: "Unpacking Services",
-      href: "/services/unpacking",
-      description: "Efficient unpacking and organization of your belongings at your new location, helping you settle in quickly.",
-      features: ["Item Placement", "Debris Removal", "Quick Setup"]
-    },
-    {
-      name: "Loading Services",
-      href: "/services/loading",
-      description: "Careful and efficient loading of your packed items onto transport vehicles, ensuring safe and optimized space utilization.",
-      features: ["Heavy Lifting", "Secure Fastening", "Logistics Planning"]
-    },
-    {
-      name: "Unloading Services",
-      href: "/services/unloading",
-      description: "Gentle and precise unloading of your belongings from transport vehicles and placement into your new home or office.",
-      features: ["Careful Placement", "Damage Prevention", "Efficient Flow"]
-    },
-    {
-      name: "Jeipsing Opening",
-      href: "/services/jeipsing-opening",
-      description: "Specialized service for opening and preparing jeipsing (wooden crates) for international or delicate item transportation.",
-      features: ["Expert Handling", "Safe Opening", "Custom Solutions"]
-    },
-    {
-      name: "Jeipsing Closing",
-      href: "/services/jeipsing-closing",
-      description: "Professional closing and securing of jeipsing (wooden crates) for safe and reliable transportation.",
-      features: ["Secure Fastening", "Weather Protection", "Compliance Checks"]
-    }
+    
   ];
 
   useEffect(() => {
@@ -108,7 +73,7 @@ export default function HomeServices() {
             className="text-base lg:text-xl max-w-2xl mx-auto leading-relaxed"
             style={{ color: '#6B7280' }}
           >
-            Comprehensive moving and packing solutions tailored to meet your specific needs in Jeddah
+            Comprehensive moving and packing solutions tailored to meet your specific needs in Saudi Arabia
           </p>
         </div>
 
@@ -206,29 +171,18 @@ export default function HomeServices() {
             className="text-base md:text-lg mb-6"
             style={{ color: '#6B7280' }}
           >
-            Need a custom moving solution?
+            Need a custom moving service?
           </p>
           <Link
-            href="/quote"
+            href="/services"
             className="inline-flex items-center px-8 py-4 text-base md:text-lg font-semibold text-white transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-200"
             style={{ backgroundColor: '#ED3F27' }}
             aria-label="Contact Azan Packers & Movers for custom moving solutions"
           >
-            Get Custom Quote
-            <svg 
-              className="w-5 h-5 ml-2" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.955 8.955 0 01-4.906-1.487L3 21l2.487-5.094A8.955 8.955 0 013 12c0-4.418 3.582-8 8-8s8 3.582 8 8z" 
-              />
-            </svg>
+            See All Services
+           
           </Link>
+          
         </div>
       </div>
     </section>

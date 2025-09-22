@@ -45,7 +45,7 @@ export default function TermsOfServicePage() {
 
           <div>
             <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>2. Services Description</h2>
-            <p className="mb-4">Azan Packers & Movers provides professional moving and relocation services including, but not limited to, house moving, office relocation, furniture dismantling, furniture assembly, packing services, and storage solutions within Jeddah and surrounding areas.</p>
+            <p className="mb-4">Azan Packers & Movers provides professional moving and relocation services including, but not limited to, house moving, villa relocation, office relocation, furniture dismantling, furniture assembly, packing services, and storage solutions within Saudi Arabia and surrounding areas.</p>
           </div>
 
           <div>

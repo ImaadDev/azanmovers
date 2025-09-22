@@ -1,78 +1,9 @@
-import Head from "next/head";
 import Link from "next/link";
 
 export default function ContactPage() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.azanmovers.com#business",
-    name: "Azan Packers & Movers",
-    description:
-      "Azan Packers & Movers in Jeddah provides professional house moving, office relocation, and furniture dismantling services across Saudi Arabia.",
-    image: "https://www.azanmovers.com/logo.png", // replace with your logo URL
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Al Aziziyah, Jeddah",
-      addressLocality: "Jeddah",
-      addressRegion: "Makkah Province",
-      postalCode: "23334",
-      addressCountry: "SA"
-    },
-    telephone: "+966551234567",
-    email: "info@azanmovers.com",
-    url: "https://www.azanmovers.com",
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "21.543333", // Jeddah coordinates
-      longitude: "39.172778"
-    },
-    openingHours: "Mo-Su 08:00-22:00",
-    sameAs: [
-      "https://www.facebook.com/azanmovers",
-      "https://www.instagram.com/azanmovers",
-      "https://twitter.com/azanmovers"
-    ]
-  };
-
-  const breadcrumbData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://www.azanmovers.com"
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Contact",
-        item: "https://www.azanmovers.com/contact"
-      }
-    ]
-  };
 
   return (
-    <>
-      <Head>
-        <title>Contact Azan Packers & Movers – Best Moving Company in Jeddah</title>
-        <meta
-          name="description"
-          content="Contact Azan Packers & Movers in Jeddah for house shifting, office relocation, and furniture moving. Call us today for a free moving quote!"
-        />
-        <meta name="robots" content="index, follow" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
-        />
-      </Head>
-
-      <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
+    <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-5">
           <div
@@ -155,7 +86,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-4">
                   <svg className="w-6 h-6 text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243m11.314 0A8 8 0 1121 12a8 8 0 01-3.343 4.657z" /></svg>
                   <div>
-                    <strong>Address:</strong> Al Aziziyah, Jeddah, Makkah Province, 23334, Saudi Arabia
+                    <strong>Address:</strong> Al Aziziyah, Saudi Arabia, Makkah Province, 23334, Saudi Arabia
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -222,7 +153,7 @@ export default function ContactPage() {
             </h2>
             <div className="w-full h-80 lg:h-96 overflow-hidden border border-white/20">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.3105908691836!2d39.172778!3d21.543333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d9e1b7f44a6f%3A0x3a1c7c36f9cbb6ab!2sJeddah!5e0!3m2!1sen!2ssa!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.3105908691836!2d39.172778!3d21.543333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d9e1b7f44a6f%3A0x3a1c7c36f9cbb6ab!2sSaudi%20Arabia!5e0!3m2!1sen!2ssa!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -243,7 +174,7 @@ export default function ContactPage() {
               Ready to experience a smooth and efficient relocation? Contact us for a personalized quote.
             </p>
             <Link
-              href="/contact"
+              href="/quote"
               className="group relative inline-flex items-center px-10 py-4 text-base md:text-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-200"
               style={{ backgroundColor: '#ED3F27' }}
               aria-label="Get a free moving quote from Azan Packers & Movers"
@@ -254,6 +185,5 @@ export default function ContactPage() {
           </section>
         </div>
       </main>
-    </>
   );
 }

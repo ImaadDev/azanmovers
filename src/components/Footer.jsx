@@ -17,9 +17,23 @@ export default function Footer() {
   ];
 
   const serviceAreas = [
-    'Al Aziziyah', 'Al Hamra', 'Al Rawdah', 'Al Salamah',
-    'Al Marwah', 'Al Faisaliah', 'Al Khalidiyyah', 'Downtown Jeddah'
+    'Riyadh', 
+    'Jeddah', 
+    'Mecca', 
+    'Medina', 
+    'Dammam', 
+    'Khobar', 
+    'Dhahran', 
+    'Taif', 
+    'Abha', 
+    'Tabuk', 
+    'Buraidah', 
+    'Khamis Mushait', 
+    'Hail', 
+    'Jizan', 
+    'Najran'
   ];
+  
 
   const socialLinks = [
     {
@@ -98,7 +112,7 @@ export default function Footer() {
 
               {/* Company Description */}
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Your trusted moving partner in Jeddah, Saudi Arabia. We provide professional, safe, and efficient moving services for homes and offices with over 10 years of experience in the industry.
+                Your trusted moving partner in Saudi Arabia. We provide professional, safe, and efficient moving services for homes, villas, and offices with over 10 years of experience in the industry.
               </p>
 
               {/* Contact Info */}
@@ -149,7 +163,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="font-semibold">Service Area</p>
-                    <p>Jeddah, Saudi Arabia</p>
+                    <p>Saudi Arabia</p>
                     <p className="text-sm">Licensed & Insured</p>
                   </div>
                 </div>
@@ -190,7 +204,7 @@ export default function Footer() {
                 className="w-1 h-8 mr-3 rounded-full"
                 style={{ backgroundColor: '#ED3F27' }}
               />
-              Service Areas in Jeddah
+              Service Areas in Saudi Arabia
             </h4>
             <div className="grid grid-cols-2 gap-3">
               {serviceAreas.map((area) => (
@@ -263,7 +277,7 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="text-gray-400 text-center lg:text-left">
               <p>&copy; {currentYear} Azan Packers & Movers. All rights reserved.</p>
-              <p className="text-sm mt-1">Licensed Moving Company in Jeddah, Saudi Arabia</p>
+              <p className="text-sm mt-1">Licensed Moving Company in Saudi Arabia</p>
             </div>
             
             <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400">

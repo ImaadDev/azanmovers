@@ -10,8 +10,8 @@ const structuredData = {
   name: "Azan Packers & Movers",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Al Aziziyah, Jeddah",
-    addressLocality: "Jeddah",
+    streetAddress: "Al Aziziyah, Saudi Arabia",
+    addressLocality: "Saudi Arabia",
     addressRegion: "Makkah Province",
     postalCode: "23334",
     addressCountry: "SA"
@@ -19,27 +19,27 @@ const structuredData = {
   telephone: "+966551234567",
   url: "https://azanmovers.vercel.app",
   openingHours: "Mo-Su 08:00-22:00",
-  serviceType: ["House Moving", "Office Relocation", "Furniture Dismantling"]
+  serviceType: ["Home Moving", "Villas Moving", "Office Relocation", "Furniture Dismantling"]
 };
 
 export const metadata = {
-  title: "Azan Packers & Movers – Jeddah",
+  title: "Azan Packers & Movers – Saudi Arabia",
   description:
-    "Azan Packers & Movers – Trusted moving company in Jeddah offering house moving, office relocation, and furniture dismantling services.",
+    "Azan Packers & Movers – Trusted moving company in Saudi Arabia offering home moving, villa relocation, office relocation, and furniture dismantling services.",
   robots: "index, follow",
   openGraph: {
     type: "website",
-    title: "Azan Packers & Movers – Jeddah",
+    title: "Azan Packers & Movers – Saudi Arabia",
     description:
-      "Azan Packers & Movers – Trusted moving company in Jeddah offering house moving, office relocation, and furniture dismantling services.",
+      "Azan Packers & Movers – Trusted moving company in Saudi Arabia offering home moving, villa relocation, office relocation, and furniture dismantling services.",
     url: "https://azanmovers.vercel.app",
     images: ["https://azanmovers.vercel.app/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Azan Packers & Movers – Jeddah",
+    title: "Azan Packers & Movers – Saudi Arabia",
     description:
-      "Trusted moving company in Jeddah offering house moving, office relocation, and furniture dismantling services.",
+      "Trusted moving company in Saudi Arabia offering home moving, villa relocation, office relocation, and furniture dismantling services.",
     images: ["https://azanmovers.vercel.app/logo.png"],
   },
   script: [
