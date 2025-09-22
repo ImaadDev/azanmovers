@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function UnloadingPage() {
   return (
@@ -41,19 +42,31 @@ export default function UnloadingPage() {
           </p>
         </header>
 
-        <section className="bg-white/80 backdrop-blur-xl border border-white/20 p-8 md:p-12 shadow-lg space-y-8 text-gray-700">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Unloading Process</h2>
-          <ul className="list-disc list-inside space-y-2 ml-4">
-            <li><strong>Gentle Placement:</strong> We carefully unload and place your items in their designated rooms, minimizing handling and potential damage.</li>
-            <li><strong>Damage Prevention:</strong> Our team takes extra precautions to protect your walls, floors, and furniture during the unloading process.</li>
-            <li><strong>Efficient Flow:</strong> We work systematically to ensure a swift and organized unloading experience, helping you settle in faster.</li>
-            <li><strong>Assembly Assistance:</strong> If needed, our team can assist with basic reassembly of furniture after unloading.</li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
+          <div className="relative w-full h-80 overflow-hidden border border-white/20">
+            <Image
+              src="/unload 2.jpg"
+              alt="Unloading Services"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          <section className="p-8 bg-white/70 backdrop-blur-xl border border-white/20 transition-all duration-300 hover:border-red-100">
+            <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Unloading Process</h2>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Gentle Placement:</strong> We carefully unload and place your items in their designated rooms, minimizing handling and potential damage.</li>
+              <li><strong>Damage Prevention:</strong> Our team takes extra precautions to protect your walls, floors, and furniture during the unloading process.</li>
+              <li><strong>Efficient Flow:</strong> We work systematically to ensure a swift and organized unloading experience, helping you settle in faster.</li>
+              <li><strong>Assembly Assistance:</strong> If needed, our team can assist with basic reassembly of furniture after unloading.</li>
+            </ul>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Unloading?</h2>
-          <p className="mb-4">Unloading can be as strenuous as loading, but with Azan Packers & Movers, it doesn't have to be. Our dedicated team ensures a seamless and stress-free unloading process, allowing you to relax.</p>
-          <p className="mb-4">We are committed to delivering your belongings safely and placing them exactly where you need them, providing a truly comprehensive moving experience.</p>
-        </section>
+            <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Unloading?</h2>
+            <p className="mb-4">Unloading can be as strenuous as loading, but with Azan Packers & Movers, it doesn't have to be. Our dedicated team ensures a seamless and stress-free unloading process, allowing you to relax.</p>
+            <p className="mb-4">We are committed to delivering your belongings safely and placing them exactly where you need them, providing a truly comprehensive moving experience.</p>
+          </section>
+        </div>
 
         <div className="text-center mt-20">
           <div className="inline-flex flex-col items-center p-8 bg-white/60 backdrop-blur-xl border border-white/20">

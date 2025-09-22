@@ -50,7 +50,7 @@ export default function StorageSolutions() {
         <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
           <div className="relative w-full h-80 overflow-hidden border border-white/20">
             <Image
-              src="/images/move8.jpg"
+              src="/Furniture.jpg"
               alt="Secure and flexible storage solutions in Saudi Arabia"
               fill
               style={{ objectFit: 'cover' }}

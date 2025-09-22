@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function JeipsingOpeningPage() {
   return (
@@ -41,19 +42,40 @@ export default function JeipsingOpeningPage() {
           </p>
         </header>
 
-        <section className="bg-white/80 backdrop-blur-xl border border-white/20 p-8 md:p-12 shadow-lg space-y-8 text-gray-700">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Jeipsing Opening Process</h2>
-          <ul className="list-disc list-inside space-y-2 ml-4">
-            <li><strong>Careful Assessment:</strong> We assess the jeipsing structure and contents to plan the safest opening method.</li>
-            <li><strong>Precision Tools:</strong> Using specialized tools, we carefully dismantle the crates, minimizing any risk to your items.</li>
-            <li><strong>Content Verification:</strong> Once opened, we verify the contents against inventory lists, ensuring everything is accounted for.</li>
-            <li><strong>Damage Prevention:</strong> Our team is trained to handle fragile and valuable items with extreme care during the opening process.</li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
+          <div className="relative w-full h-80 overflow-hidden border border-white/20">
+            <Image
+              src="/Truck.jpg"
+              alt="Jeipsing Opening Services"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          <section className="p-8 bg-white/70 backdrop-blur-xl border border-white/20 transition-all duration-300 hover:border-red-100">
+            <div className="relative w-full h-64 mb-8 overflow-hidden rounded-lg">
+              <Image
+                src="/Load 1.jpg"
+                alt="Careful Assessment"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Jeipsing Opening Process</h2>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Careful Assessment:</strong> We assess the jeipsing structure and contents to plan the safest opening method.</li>
+              <li><strong>Precision Tools:</strong> Using specialized tools, we carefully dismantle the crates, minimizing any risk to your items.</li>
+              <li><strong>Content Verification:</strong> Once opened, we verify the contents against inventory lists, ensuring everything is accounted for.</li>
+              <li><strong>Damage Prevention:</strong> Our team is trained to handle fragile and valuable items with extreme care during the opening process.</li>
+            </ul>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Jeipsing Opening?</h2>
-          <p className="mb-4">Jeipsing (wooden crates) are often used for high-value, fragile, or international shipments. Our expertise in opening these specialized containers ensures the integrity of your items is maintained.</p>
-          <p className="mb-4">Trust Azan Packers & Movers for professional and secure jeipsing opening services, providing peace of mind for your most important cargo.</p>
-        </section>
+            <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Jeipsing Opening?</h2>
+            <p className="mb-4">Jeipsing (wooden crates) are often used for high-value, fragile, or international shipments. Our expertise in opening these specialized containers ensures the integrity of your items is maintained.</p>
+            <p className="mb-4">Trust Azan Packers & Movers for professional and secure jeipsing opening services, providing peace of mind for your most important cargo.</p>
+          </section>
+        </div>
 
         <div className="text-center mt-20">
           <div className="inline-flex flex-col items-center p-8 bg-white/60 backdrop-blur-xl border border-white/20">

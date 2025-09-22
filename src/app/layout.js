@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google"; // ✅ import font
+import WhatsAppButton from "../components/WhatsappButton";
 
 // Load Montserrat (adjust weights & subsets as needed)
 const montserrat = Montserrat({
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.className} flex flex-col min-h-screen`}>
         <Header />
         <main className="flex-grow mt-10 md:mt-20">{children}</main>
+        <WhatsAppButton/>
         <Footer />
 
         {/* LocalBusiness JSON-LD for Google */}

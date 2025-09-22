@@ -50,7 +50,7 @@ export default function OfficeRelocation() {
         <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
           <div className="relative w-full h-80 overflow-hidden border border-white/20">
             <Image
-              src="/images/move2.jpg"
+              src="/Truck Stuff 2.jpg"
               alt="Professional office relocation services in Saudi Arabia"
               fill
               style={{ objectFit: 'cover' }}
@@ -59,6 +59,15 @@ export default function OfficeRelocation() {
             />
           </div>
           <section className="p-8 bg-white/70 backdrop-blur-xl border border-white/20 transition-all duration-300 hover:border-red-100">
+            <div className="relative w-full h-64 mb-8 overflow-hidden rounded-lg">
+              <Image
+                src="/Trucks.jpg"
+                alt="Office Relocation"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
             <h2 className="text-2xl lg:text-4xl font-bold mb-6" style={{ color: '#374151' }}>
               Our Office Relocation Expertise
             </h2>

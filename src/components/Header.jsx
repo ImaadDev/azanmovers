@@ -203,7 +203,7 @@ export default function Header() {
 
             {/* Emergency Call Button */}
             <a
-              href="tel:+966123456789"
+              href="tel:+966593694941"
               className="hidden sm:inline-flex items-center px-6 py-3 text-sm font-semibold text-red-600 border-2 border-red-200 hover:bg-red-50 transition-all duration-300 hover:scale-105 focus:outline-none focus:scale-105"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

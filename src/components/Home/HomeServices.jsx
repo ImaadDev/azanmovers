@@ -10,19 +10,19 @@ export default function HomeServices() {
   const services = [
     { 
       name: "House Moving", 
-      href: "/services#house-moving",
+      href: "/services/house-moving",
       description: "Complete residential moving services with professional packing, safe transportation, and careful handling of your belongings.",
       features: ["Professional Packing", "Safe Transportation", "Furniture Assembly"]
     },
     { 
       name: "Office Relocation", 
-      href: "/services#office-relocation",
+      href: "/services/office-relocation",
       description: "Seamless business relocations with minimal downtime, specialized equipment handling, and coordinated moving schedules.",
       features: ["Minimal Downtime", "IT Equipment Care", "Flexible Scheduling"]
     },
     { 
       name: "Furniture Dismantling", 
-      href: "/services#furniture-dismantling",
+      href: "/services/furniture-dismantling",
       description: "Expert furniture disassembly and reassembly services ensuring your valuable pieces are moved safely and efficiently.",
       features: ["Expert Assembly", "Safe Handling", "Tool Provided"]
     },

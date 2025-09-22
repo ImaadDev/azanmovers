@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function JeipsingClosingPage() {
   return (
@@ -41,19 +42,40 @@ export default function JeipsingClosingPage() {
           </p>
         </header>
 
-        <section className="bg-white/80 backdrop-blur-xl border border-white/20 p-8 md:p-12 shadow-lg space-y-8 text-gray-700">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Jeipsing Closing Process</h2>
-          <ul className="list-disc list-inside space-y-2 ml-4">
-            <li><strong>Secure Fastening:</strong> We meticulously close and secure jeipsing to withstand transit stresses, using appropriate tools and techniques.</li>
-            <li><strong>Weather Protection:</strong> We ensure the crates are sealed to protect contents from environmental factors during transportation.</li>
-            <li><strong>Compliance Checks:</strong> All closing procedures adhere to international shipping standards and regulations.</li>
-            <li><strong>Custom Solutions:</strong> We can provide custom closing solutions for uniquely shaped or extremely fragile items within jeipsing.</li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
+          <div className="relative w-full h-80 overflow-hidden border border-white/20">
+            <Image
+              src="/Truck.jpg"
+              alt="Jeipsing Closing Services"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          <section className="p-8 bg-white/70 backdrop-blur-xl border border-white/20 transition-all duration-300 hover:border-red-100">
+            <div className="relative w-full h-64 mb-8 overflow-hidden rounded-lg">
+              <Image
+                src="/Load.jpg"
+                alt="Secure Fastening"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Jeipsing Closing Process</h2>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Secure Fastening:</strong> We meticulously close and secure jeipsing to withstand transit stresses, using appropriate tools and techniques.</li>
+              <li><strong>Weather Protection:</strong> We ensure the crates are sealed to protect contents from environmental factors during transportation.</li>
+              <li><strong>Compliance Checks:</strong> All closing procedures adhere to international shipping standards and regulations.</li>
+              <li><strong>Custom Solutions:</strong> We can provide custom closing solutions for uniquely shaped or extremely fragile items within jeipsing.</li>
+            </ul>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Jeipsing Closing?</h2>
-          <p className="mb-4">The proper closing of jeipsing is crucial for the safe transit of your valuable and delicate items. Our experienced team ensures your wooden crates are securely sealed and prepared for any journey.</p>
-          <p className="mb-4">Rely on Azan Packers & Movers for expert jeipsing closing services, guaranteeing the protection and integrity of your specialized cargo from start to finish.</p>
-        </section>
+            <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Jeipsing Closing?</h2>
+            <p className="mb-4">The proper closing of jeipsing is crucial for the safe transit of your valuable and delicate items. Our experienced team ensures your wooden crates are securely sealed and prepared for any journey.</p>
+            <p className="mb-4">Rely on Azan Packers & Movers for expert jeipsing closing services, guaranteeing the protection and integrity of your specialized cargo from start to finish.</p>
+          </section>
+        </div>
 
         <div className="text-center mt-20">
           <div className="inline-flex flex-col items-center p-8 bg-white/60 backdrop-blur-xl border border-white/20">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function LoadingPage() {
   return (
@@ -41,19 +42,40 @@ export default function LoadingPage() {
           </p>
         </header>
 
-        <section className="bg-white/80 backdrop-blur-xl border border-white/20 p-8 md:p-12 shadow-lg space-y-8 text-gray-700">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Loading Process</h2>
-          <ul className="list-disc list-inside space-y-2 ml-4">
-            <li><strong>Strategic Planning:</strong> We plan the loading process to ensure optimal space utilization and weight distribution.</li>
-            <li><strong>Secure Handling:</strong> All items are handled with care and secured properly to prevent damage during transit.</li>
-            <li><strong>Special Equipment:</strong> We use appropriate equipment for heavy and bulky items, ensuring safety for both your belongings and our team.</li>
-            <li><strong>Efficient Execution:</strong> Our team works quickly and systematically to complete the loading process on schedule.</li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
+          <div className="relative w-full h-80 overflow-hidden border border-white/20">
+            <Image
+              src="/Load 1.jpg"
+              alt="Loading Services"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          <section className="p-8 bg-white/70 backdrop-blur-xl border border-white/20 transition-all duration-300 hover:border-red-100">
+            <div className="relative w-full h-64 mb-8 overflow-hidden rounded-lg">
+              <Image
+                src="/Load.jpg"
+                alt="Secure Handling"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Loading Process</h2>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li><strong>Strategic Planning:</strong> We plan the loading process to ensure optimal space utilization and weight distribution.</li>
+              <li><strong>Secure Handling:</strong> All items are handled with care and secured properly to prevent damage during transit.</li>
+              <li><strong>Special Equipment:</strong> We use appropriate equipment for heavy and bulky items, ensuring safety for both your belongings and our team.</li>
+              <li><strong>Efficient Execution:</strong> Our team works quickly and systematically to complete the loading process on schedule.</li>
+            </ul>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Loading?</h2>
-          <p className="mb-4">With Azan Packers & Movers, you can trust that your belongings are in capable hands. Our experienced loaders ensure that every item, regardless of size or fragility, is loaded securely and efficiently.</p>
-          <p className="mb-4">We pride ourselves on our attention to detail and commitment to safety, providing you with peace of mind throughout the moving process.</p>
-        </section>
+            <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Loading?</h2>
+            <p className="mb-4">With Azan Packers & Movers, you can trust that your belongings are in capable hands. Our experienced loaders ensure that every item, regardless of size or fragility, is loaded securely and efficiently.</p>
+            <p className="mb-4">We pride ourselves on our attention to detail and commitment to safety, providing you with peace of mind throughout the moving process.</p>
+          </section>
+        </div>
 
         <div className="text-center mt-20">
           <div className="inline-flex flex-col items-center p-8 bg-white/60 backdrop-blur-xl border border-white/20">

@@ -1,68 +1,49 @@
 "use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 export default function QuotePage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    moveDate: '',
-    message: '',
-  });
-
+  const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
 
   const services = [
-    'Furniture Dismantling',
-    'Furniture Assembly',
-    'Packing Services',
-    'Unpacking Services',
-    'Loading Services',
-    'Unloading Services',
-    'Jeipsing Opening',
-    'Jeipsing Closing',
-    'Storage Solutions',
+    "Furniture Dismantling",
+    "Furniture Assembly",
+    "Packing Services",
+    "Unpacking Services",
+    "Loading Services",
+    "Unloading Services",
+    "Jeipsing Opening",
+    "Jeipsing Closing",
+    "Storage Solutions",
   ];
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
-      console.log('Form Data Submitted:', formData);
-
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        moveDate: '',
-        message: '',
-      });
-    } catch (error) {
-      console.error('Submission error:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setSubmitStatus("success");
+          e.target.reset();
+        },
+        () => setSubmitStatus("error")
+      )
+      .finally(() => setIsSubmitting(false));
   };
 
   return (
-    <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
+    <main className="relative overflow-hidden" style={{ backgroundColor: "#FFFCFB" }}>
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-5 w-48 h-48 bg-gradient-to-br from-red-500/3 to-orange-500/3 animate-blob filter blur-xl" />
@@ -78,9 +59,9 @@ export default function QuotePage() {
             <span
               className="text-xs font-bold uppercase tracking-[0.2em] px-4 py-2 border"
               style={{
-                color: '#ED3F27',
-                borderColor: '#ED3F27',
-                background: 'rgba(237, 63, 39, 0.05)',
+                color: "#ED3F27",
+                borderColor: "#ED3F27",
+                background: "rgba(237, 63, 39, 0.05)",
               }}
             >
               Request Your Free Estimate
@@ -88,20 +69,21 @@ export default function QuotePage() {
             <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-red-500" />
           </div>
 
-          <h1 className="text-3xl lg:text-5xl font-black mb-8 leading-none tracking-tight" style={{ color: '#374151' }}>
+          <h1 className="text-3xl lg:text-5xl font-black mb-8 leading-none tracking-tight" style={{ color: "#374151" }}>
             Get Your
             <span className="block bg-gradient-to-r from-red-600 via-red-500 to-orange-500 bg-clip-text text-transparent">
               Free Estimate
             </span>
           </h1>
 
-          <p className="text-base lg:text-xl max-w-2xl mx-auto leading-relaxed font-light" style={{ color: '#6B7280' }}>
+          <p className="text-base lg:text-xl max-w-2xl mx-auto leading-relaxed font-light" style={{ color: "#6B7280" }}>
             Tell us about your moving needs, and we’ll provide a personalized, no-obligation estimate.
           </p>
         </header>
 
         {/* Form */}
         <form
+          ref={formRef}
           onSubmit={handleSubmit}
           className="bg-white/80 md:backdrop-blur-xl md:border border-white/20 p-8 md:p-12 md:shadow-lg space-y-6 text-left"
         >
@@ -114,12 +96,11 @@ export default function QuotePage() {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-all duration-300"
               />
             </div>
+
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 Email Address
@@ -128,8 +109,6 @@ export default function QuotePage() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-all duration-300"
               />
@@ -145,12 +124,11 @@ export default function QuotePage() {
                 type="tel"
                 id="phone"
                 name="phone"
-                value={formData.phone}
-                onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-all duration-300"
               />
             </div>
+
             <div>
               <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
                 Service Required
@@ -158,8 +136,6 @@ export default function QuotePage() {
               <select
                 id="service"
                 name="service"
-                value={formData.service}
-                onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-gray-300 bg-white focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-all duration-300"
               >
@@ -181,8 +157,6 @@ export default function QuotePage() {
               type="date"
               id="moveDate"
               name="moveDate"
-              value={formData.moveDate}
-              onChange={handleChange}
               className="w-full px-4 py-3 border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-all duration-300"
             />
           </div>
@@ -195,8 +169,6 @@ export default function QuotePage() {
               id="message"
               name="message"
               rows="5"
-              value={formData.message}
-              onChange={handleChange}
               className="w-full px-4 py-3 border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-all duration-300"
             ></textarea>
           </div>
@@ -205,7 +177,7 @@ export default function QuotePage() {
             type="submit"
             disabled={isSubmitting}
             className="w-full flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-200"
-            style={{ backgroundColor: '#ED3F27' }}
+            style={{ backgroundColor: "#ED3F27" }}
           >
             {isSubmitting ? (
               <svg
@@ -214,14 +186,7 @@ export default function QuotePage() {
                 fill="none"
                 viewBox="0 0 24 24"
               >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path
                   className="opacity-75"
                   fill="currentColor"
@@ -229,16 +194,16 @@ export default function QuotePage() {
                 ></path>
               </svg>
             ) : (
-              'Request Your Free Estimate'
+              "Request Your Free Estimate"
             )}
           </button>
 
-          {submitStatus === 'success' && (
+          {submitStatus === "success" && (
             <p className="text-center text-green-600 font-semibold mt-4">
               Your estimate request has been sent successfully!
             </p>
           )}
-          {submitStatus === 'error' && (
+          {submitStatus === "error" && (
             <p className="text-center text-red-600 font-semibold mt-4">
               There was an error sending your request. Please try again.
             </p>

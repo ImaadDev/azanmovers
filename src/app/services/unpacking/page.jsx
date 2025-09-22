@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function UnpackingPage() {
   return (
@@ -41,19 +42,31 @@ export default function UnpackingPage() {
           </p>
         </header>
 
-        <section className="bg-white/80 backdrop-blur-xl border border-white/20 p-8 md:p-12 shadow-lg space-y-8 text-gray-700">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Unpacking Process</h2>
-          <ul className="list-disc list-inside space-y-2 ml-4">
-            <li><strong>Careful Handling:</strong> We meticulously unpack your items, ensuring nothing is damaged.</li>
-            <li><strong>Organization:</strong> Items are placed logically in designated areas as per your instructions.</li>
-            <li><strong>Debris Removal:</strong> All packing materials and debris are responsibly removed after unpacking.</li>
-            <li><strong>Quick Setup:</strong> Our team works efficiently to help you settle into your new space faster.</li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 lg:mb-24">
+          <div className="relative w-full h-80 overflow-hidden border border-white/20">
+            <Image
+              src="/unload.jpg"
+              alt="Unpacking Services"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
+          <section className="p-8 bg-white/70 backdrop-blur-xl border border-white/20 transition-all duration-300 hover:border-red-100">
+           <h2 className="text-2xl font-bold mb-4" style={{ color: '#374151' }}>Our Unpacking Process</h2>
+           <ul className="list-disc list-inside space-y-2 ml-4">
+             <li><strong>Careful Handling:</strong> We meticulously unpack your items, ensuring nothing is damaged.</li>
+             <li><strong>Organization:</strong> Items are placed logically in designated areas as per your instructions.</li>
+             <li><strong>Debris Removal:</strong> All packing materials and debris are responsibly removed after unpacking.</li>
+             <li><strong>Quick Setup:</strong> Our team works efficiently to help you settle into your new space faster.</li>
+           </ul>
 
-          <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Unpacking?</h2>
-          <p className="mb-4">Our professional unpacking services save you time and effort, allowing you to focus on enjoying your new environment. We bring expertise and care to every box, ensuring a smooth transition.</p>
-          <p className="mb-4">Whether it's a residential move or an office relocation, our team is equipped to handle all your unpacking needs with precision and a friendly attitude.</p>
-        </section>
+           <h2 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#374151' }}>Why Choose Azan Movers for Unpacking?</h2>
+           <p className="mb-4">Our professional unpacking services save you time and effort, allowing you to focus on enjoying your new environment. We bring expertise and care to every box, ensuring a smooth transition.</p>
+           <p className="mb-4">Whether it's a residential move or an office relocation, our team is equipped to handle all your unpacking needs with precision and a friendly attitude.</p>
+         </section>
+        </div>
 
         <div className="text-center mt-20">
           <div className="inline-flex flex-col items-center p-8 bg-white/60 backdrop-blur-xl border border-white/20">
