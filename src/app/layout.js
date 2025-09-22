@@ -2,6 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Montserrat } from "next/font/google"; // ✅ import font
 
 // Load Montserrat (adjust weights & subsets as needed)
