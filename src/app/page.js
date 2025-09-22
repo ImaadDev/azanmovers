@@ -17,7 +17,7 @@ const structuredData = {
     addressCountry: "SA"
   },
   telephone: "+966551234567",
-  url: "https://www.azanmovers.com",
+  url: "https://azanmovers.vercel.app",
   openingHours: "Mo-Su 08:00-22:00",
   serviceType: ["House Moving", "Office Relocation", "Furniture Dismantling"]
 };
@@ -32,15 +32,15 @@ export const metadata = {
     title: "Azan Packers & Movers – Jeddah",
     description:
       "Azan Packers & Movers – Trusted moving company in Jeddah offering house moving, office relocation, and furniture dismantling services.",
-    url: "https://www.azanmovers.com",
-    images: ["https://www.azanmovers.com/logo.png"],
+    url: "https://azanmovers.vercel.app",
+    images: ["https://azanmovers.vercel.app/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Azan Packers & Movers – Jeddah",
     description:
       "Trusted moving company in Jeddah offering house moving, office relocation, and furniture dismantling services.",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://azanmovers.vercel.app/logo.png"],
   },
   script: [
     { 

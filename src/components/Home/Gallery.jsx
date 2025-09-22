@@ -6,12 +6,18 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function HomeGallery() {
   const galleryItems = [
-    { id: 1, src: '/images/gallery-1.jpg', alt: 'House Moving Service', category: 'House Moving' },
-    { id: 2, src: '/images/gallery-2.jpg', alt: 'Office Relocation Service', category: 'Office Relocation' },
-    { id: 3, src: '/images/gallery-3.jpg', alt: 'Furniture Assembly', category: 'Furniture Assembly' },
-    { id: 4, src: '/images/gallery-4.jpg', alt: 'Packing Services', category: 'Packing' },
-    { id: 5, src: '/images/gallery-5.jpg', alt: 'Storage Solutions', category: 'Storage' },
-    { id: 6, src: '/images/gallery-6.jpg', alt: 'Furniture Dismantling', category: 'Furniture Dismantling' },
+    { id: 1, src: '/Furniture 1.jpg', alt: 'Furniture Moving Service', category: 'Furniture Moving' },
+    { id: 2, src: '/Furniture 3.jpg', alt: 'Furniture Packing Service', category: 'Furniture Packing' },
+    { id: 3, src: '/Furniture.jpg', alt: 'Furniture Dismantling Service', category: 'Furniture Dismantling' },
+    { id: 4, src: '/Load 1.jpg', alt: 'Loading Service', category: 'Loading' },
+    { id: 5, src: '/Load.jpg', alt: 'Professional Loading Service', category: 'Loading' },
+    { id: 6, src: '/Truck 3.jpg', alt: 'Moving Truck', category: 'Transportation' },
+    { id: 7, src: '/truck 4.jpg', alt: 'Relocation Truck', category: 'Transportation' },
+    { id: 8, src: '/Truck Stuff 2.jpg', alt: 'Truck Loading', category: 'Loading' },
+    { id: 9, src: '/Truck.jpg', alt: 'Moving Truck on Road', category: 'Transportation' },
+    { id: 10, src: '/Trucks.jpg', alt: 'Multiple Moving Trucks', category: 'Transportation' },
+    { id: 11, src: '/unload 2.jpg', alt: 'Unloading Service', category: 'Unloading' },
+    { id: 12, src: '/unload.jpg', alt: 'Professional Unloading Service', category: 'Unloading' },
   ];
 
   const [visibleItems, setVisibleItems] = useState([]);

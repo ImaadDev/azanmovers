@@ -25,6 +25,42 @@ export default function HomeServices() {
       href: "/services#furniture-dismantling",
       description: "Expert furniture disassembly and reassembly services ensuring your valuable pieces are moved safely and efficiently.",
       features: ["Expert Assembly", "Safe Handling", "Tool Provided"]
+    },
+    {
+      name: "Packing Services",
+      href: "/services/packing",
+      description: "Professional packing services using high-quality materials to ensure the safety of your belongings during transit.",
+      features: ["Fragile Item Care", "Secure Boxing", "Labeling & Inventory"]
+    },
+    {
+      name: "Unpacking Services",
+      href: "/services/unpacking",
+      description: "Efficient unpacking and organization of your belongings at your new location, helping you settle in quickly.",
+      features: ["Item Placement", "Debris Removal", "Quick Setup"]
+    },
+    {
+      name: "Loading Services",
+      href: "/services/loading",
+      description: "Careful and efficient loading of your packed items onto transport vehicles, ensuring safe and optimized space utilization.",
+      features: ["Heavy Lifting", "Secure Fastening", "Logistics Planning"]
+    },
+    {
+      name: "Unloading Services",
+      href: "/services/unloading",
+      description: "Gentle and precise unloading of your belongings from transport vehicles and placement into your new home or office.",
+      features: ["Careful Placement", "Damage Prevention", "Efficient Flow"]
+    },
+    {
+      name: "Jeipsing Opening",
+      href: "/services/jeipsing-opening",
+      description: "Specialized service for opening and preparing jeipsing (wooden crates) for international or delicate item transportation.",
+      features: ["Expert Handling", "Safe Opening", "Custom Solutions"]
+    },
+    {
+      name: "Jeipsing Closing",
+      href: "/services/jeipsing-closing",
+      description: "Professional closing and securing of jeipsing (wooden crates) for safe and reliable transportation.",
+      features: ["Secure Fastening", "Weather Protection", "Compliance Checks"]
     }
   ];
 
@@ -173,7 +209,7 @@ export default function HomeServices() {
             Need a custom moving solution?
           </p>
           <Link
-            href="/contact"
+            href="/quote"
             className="inline-flex items-center px-8 py-4 text-base md:text-lg font-semibold text-white transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-200"
             style={{ backgroundColor: '#ED3F27' }}
             aria-label="Contact Azan Packers & Movers for custom moving solutions"

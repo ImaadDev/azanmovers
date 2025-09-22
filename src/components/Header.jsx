@@ -20,12 +20,17 @@ export default function Header() {
       href: '/services',
       active: pathname?.startsWith('/services'),
       dropdown: [
-        { name: 'House Moving', href: '/services/house-moving', icon: '🏠' },
-        { name: 'Office Relocation', href: '/services/office-relocation', icon: '🏢' },
-        { name: 'Furniture Dismantling', href: '/services/furniture-dismantling', icon: '🛠️' },
-        { name: 'Furniture Assembly', href: '/services/furniture-assembly', icon: '🛋️' },
-        { name: 'Packing Services', href: '/services/packing', icon: '📦' },
-        { name: 'Storage Solutions', href: '/services/storage', icon: '🏪' }
+        { name: 'House Moving', href: '/services/house-moving', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 12v10a1 1 0 001 1h3m10-10l2 2m0 0l-7 7-7-7M19 12v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg> },
+        { name: 'Office Relocation', href: '/services/office-relocation', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" /></svg> },
+        { name: 'Furniture Dismantling', href: '/services/furniture-dismantling', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg> },
+        { name: 'Furniture Assembly', href: '/services/furniture-assembly', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg> },
+        { name: 'Packing Services', href: '/services/packing', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4m0-10l8 4m-8-4l-8 4" /></svg> },
+        { name: 'Unpacking Services', href: '/services/unpacking', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2 2m0 0l-7 7-7-7M5 12h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg> },
+        { name: 'Loading Services', href: '/services/loading', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v-1a2 2 0 012-2h12a2 2 0 012 2v1m-6-4l-4 4m0 0l4 4m-4-4H3" /></svg> },
+        { name: 'Unloading Services', href: '/services/unloading', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 8v1a2 2 0 01-2 2H6a2 2 0 01-2-2V8m6 4l4-4m0 0l-4-4m4 4H21" /></svg> },
+        { name: 'Jeipsing Opening', href: '/services/jeipsing-opening', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg> },
+        { name: 'Jeipsing Closing', href: '/services/jeipsing-closing', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a2 2 0 00-2-2H8a2 2 0 00-2 2v4h12z" /></svg> },
+        { name: 'Storage Solutions', href: '/services/storage', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 12a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 19a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z" /></svg> }
       ]
     },
     { name: 'BLOGS', href: '/blogs', active: pathname?.startsWith('/blog') },
@@ -99,7 +104,7 @@ export default function Header() {
         borderBottomColor: isScrolled ? 'rgba(237, 63, 39, 0.1)' : 'transparent'
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-0">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
@@ -124,7 +129,7 @@ export default function Header() {
           </Link>
 
        {/* Desktop Navigation */}
-<div className="hidden lg:flex items-center space-x-6">
+<div className="hidden lg:flex items-center space-x-4">
   {navigationItems.map((item, index) => (
     <div
       key={item.name}
@@ -134,7 +139,7 @@ export default function Header() {
     >
       <Link
         href={item.href}
-        className="relative px-4 py-2 text-base font-medium text-gray-700 transition-colors duration-200 hover:text-red-600"
+        className="relative px-4 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:text-red-600"
       >
         <span className="flex items-center">
           {item.name}

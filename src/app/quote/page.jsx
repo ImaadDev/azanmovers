@@ -17,11 +17,14 @@ export default function QuotePage() {
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
 
   const services = [
-    'House Moving',
-    'Office Relocation',
     'Furniture Dismantling',
     'Furniture Assembly',
     'Packing Services',
+    'Unpacking Services',
+    'Loading Services',
+    'Unloading Services',
+    'Jeipsing Opening',
+    'Jeipsing Closing',
     'Storage Solutions',
   ];
 
