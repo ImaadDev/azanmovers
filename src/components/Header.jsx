@@ -121,9 +121,9 @@ export default function Header() {
               </svg>
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-2xl font-black tracking-tight" style={{ color: '#374151' }}>
+              <div className="text-2xl font-black tracking-tight" style={{ color: '#374151' }}>
                 Azan <span style={{ color: '#ED3F27' }}>Movers</span>
-              </h1>
+              </div>
               <p className="text-xs text-gray-500 -mt-1 tracking-wide">Professional Moving Services</p>
             </div>
           </Link>
