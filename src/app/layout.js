@@ -4,7 +4,8 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google"; // ✅ import font
 import WhatsAppButton from "../components/WhatsappButton";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import CanonicalTag from "../components/CanonicalTag";
 
 // Load Montserrat (adjust weights & subsets as needed)
 const montserrat = Montserrat({
@@ -81,7 +82,7 @@ export default function RootLayout({ children }) {
         <main className="flex-grow mt-10 md:mt-20">{children}</main>
         <WhatsAppButton/>
         <Footer />
-
+        <CanonicalTag />
         {/* LocalBusiness JSON-LD for Google */}
         <script
           type="application/ld+json"
