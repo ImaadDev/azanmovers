@@ -149,7 +149,7 @@ export default function BlogPage() {
                   style={{ color: '#ED3F27' }}
                   itemProp="url"
                 >
-                  Read More
+                  {post.title}
                   <span className="ml-2 group-hover:translate-x-2 transition-transform duration-300">→</span>
                 </Link>
 

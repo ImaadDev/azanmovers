@@ -140,7 +140,7 @@ export default function HomeServices() {
                 style={{ color: '#ED3F27' }}
                 aria-label={`Learn more about ${service.name} services`}
               >
-                <span>Learn More</span>
+                <span>Learn More about {service.name}</span>
                 <svg 
                   className="w-5 h-5 ml-2 transition-transform duration-300 group-hover/link:translate-x-1"
                   fill="none" 

@@ -6,13 +6,13 @@ export default function AboutPage() {
     "@type": "LocalBusiness",
     name: "Azan Packers & Movers",
     description:
-      "Azan Packers & Movers – Trusted moving company in Saudi Arabia offering professional home, villa, office relocation, and furniture dismantling services.",
+      "Azan Packers & Movers – Trusted moving company in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer professional home, villa, office relocation, and furniture dismantling services.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Al Aziziyah, Saudi Arabia",
-      addressLocality: "Saudi Arabia",
+      streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
+      addressLocality: "Jeddah",
       addressRegion: "Makkah Province",
-      postalCode: "23334",
+      postalCode: "23443",
       addressCountry: "SA",
     },
     telephone: "+966551234567",

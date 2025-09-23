@@ -163,10 +163,10 @@ export default function ServicesPage() {
       telephone: "+966551234567",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Al Aziziyah, Saudi Arabia",
-        addressLocality: "Saudi Arabia",
+        streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
+        addressLocality: "Jeddah",
         addressRegion: "Makkah Province",
-        postalCode: "23334",
+        postalCode: "23443",
         addressCountry: "SA"
       }
     },
@@ -295,7 +295,7 @@ export default function ServicesPage() {
                 href={service.href}
                   className="inline-flex items-center text-red-600 font-semibold hover:underline transition-colors duration-300 group"
               >
-                  Learn More
+                  Learn More about {service.name}
                   <span className="ml-2 group-hover:translate-x-2 transition-transform duration-300">→</span>
               </Link>
             </div>

@@ -257,7 +257,7 @@ export default function FeaturedBlog() {
                     style={{ color: '#ED3F27' }}
                     aria-label={`Read more about ${blog.title}`}
                   >
-                    <span className="relative z-10 mr-3">Explore Article</span>
+                    <span className="relative z-10 mr-3">{blog.title}</span>
                     <div 
                       className={`flex items-center justify-center w-12 h-12 rounded-full transition-all duration-500 ${
                         hoveredCard === index ? 'bg-red-600 text-white scale-110' : 'bg-red-50 text-red-600'

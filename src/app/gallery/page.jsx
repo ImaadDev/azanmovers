@@ -95,7 +95,7 @@ export default function GalleryPage() {
                   href={`/gallery/${image.category.toLowerCase().replace(/ /g, '-')}`}
                   className="inline-flex items-center text-red-600 font-semibold text-sm md:text-base hover:underline transition-colors duration-300 group"
                 >
-                  View Details
+                  View {image.title} Details
                   <span className="ml-2 group-hover:translate-x-2 transition-transform duration-300">→</span>
                 </Link>
               </div>

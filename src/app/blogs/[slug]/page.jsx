@@ -101,6 +101,14 @@ export default function BlogPost({ params }) {
         "@type": "ImageObject",
         url: "https://www.azanmovers.com/logo.png"
       }
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
+      addressLocality: "Jeddah",
+      addressRegion: "Makkah Province",
+      postalCode: "23443",
+      addressCountry: "SA",
     }
   };
 

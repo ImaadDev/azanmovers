@@ -15,19 +15,19 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Azan Packers & Movers – Saudi Arabia",
+  title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
   description:
-    "Professional packers and movers in Saudi Arabia. House moving, office relocation, furniture dismantling services.",
+    "Professional packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling services.",
   keywords: [
-    "Packers and Movers Saudi Arabia",
-    "House Moving Saudi Arabia",
-    "Office Relocation Saudi Arabia",
-    "Furniture Dismantling Saudi Arabia",
+    "Packers and Movers Jeddah",
+    "House Moving Jeddah",
+    "Office Relocation Jeddah",
+    "Furniture Dismantling Jeddah",
   ],
   openGraph: {
-    title: "Azan Packers & Movers – Saudi Arabia",
+    title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
     description:
-      "Reliable packers and movers in Saudi Arabia offering house moving, office relocation, and furniture dismantling.",
+      "Reliable packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling.",
     url: "https://azanmovers.vercel.app",
     siteName: "Azan Packers & Movers",
     images: [
@@ -42,11 +42,14 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Azan Packers & Movers – Saudi Arabia",
+    title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
     description:
-      "Reliable packers and movers in Saudi Arabia offering house moving, office relocation, and furniture dismantling.",
+      "Reliable packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling.",
     creator: "@AzanMovers",
     images: ["https://azanmovers.vercel.app/og-image.jpg"],
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -59,10 +62,10 @@ export default function RootLayout({ children }) {
     telephone: "+966551234567",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Al Aziziyah, Saudi Arabia",
-      addressLocality: "Saudi Arabia",
+      streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
+      addressLocality: "Jeddah",
       addressRegion: "Makkah Province",
-      postalCode: "23334",
+      postalCode: "23443",
       addressCountry: "SA",
     },
     url: "https://azanmovers.vercel.app",
