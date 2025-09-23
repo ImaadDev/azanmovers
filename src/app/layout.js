@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google"; // ✅ import font
 import WhatsAppButton from "../components/WhatsappButton";
+import { Analytics } from "@vercel/analytics/next"
 
 // Load Montserrat (adjust weights & subsets as needed)
 const montserrat = Montserrat({
@@ -75,6 +76,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* ✅ Apply font globally */}
       <body className={`${montserrat.className} flex flex-col min-h-screen`}>
+        <Analytics/>
         <Header />
         <main className="flex-grow mt-10 md:mt-20">{children}</main>
         <WhatsAppButton/>
