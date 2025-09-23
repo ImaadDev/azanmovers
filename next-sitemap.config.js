@@ -1,8 +1,8 @@
-/** @type {import('next-sitemap').IConfig} */
+
+  /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-    generateRobotsTxt: false, // creates robots.txt automatically
-    changefreq: 'daily',
-    priority: 0.8,
-  };
-  
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://azanmovers.vercel.app',
+  generateRobotsTxt: false, // because you already have robots.txt
+  changefreq: 'daily',
+  priority: 0.8,
+};
