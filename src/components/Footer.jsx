@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import azanmoversLogo from '../../public/azanmovers-logo.png';
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -96,14 +98,14 @@ export default function Footer() {
             <div className="mb-8">
               {/* Logo */}
               <div className="flex items-center mb-6">
-                <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
-                  style={{ backgroundColor: '#ED3F27' }}
-                >
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 8l2 2 4-4" />
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center mr-4">
+                  <Image
+                    src={azanmoversLogo}
+                    alt="Azan Movers Logo"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="text-3xl font-black text-white">
                   Azan <span style={{ color: '#ED3F27' }}>Movers</span>
@@ -112,7 +114,7 @@ export default function Footer() {
 
               {/* Company Description */}
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Your trusted moving partner in Saudi Arabia. We provide professional, safe, and efficient moving services for homes, villas, and offices with over 10 years of experience in the industry.
+                Saudi Arabia's top-rated moving company since 2015. We provide professional, safe, and efficient moving services for homes, villas, and offices. Trusted by thousands of families and businesses across Saudi Arabia.
               </p>
 
               {/* Contact Info */}
