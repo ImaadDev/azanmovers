@@ -1,21 +1,35 @@
 export const metadata = {
-  title: "Moving Services in Saudi Arabia – Azan Packers & Movers",
+  title: "Best Moving Services in Saudi Arabia | Professional Packers & Movers Jeddah",
   description:
-    "Explore our moving services in Saudi Arabia including house moving, office relocation, packing, unpacking, loading, unloading, jeipsing opening and closing, and furniture dismantling. Trusted packers and movers in Saudi Arabia.",
+    "Top-rated moving services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands of families and businesses. Get free quote today!",
+  keywords: [
+    "moving services Saudi Arabia",
+    "best movers Jeddah",
+    "house moving services Saudi Arabia",
+    "office relocation Jeddah",
+    "furniture dismantling Saudi Arabia",
+    "packing services Jeddah",
+    "storage solutions Saudi Arabia",
+    "professional movers Jeddah",
+    "affordable moving services Saudi Arabia",
+    "reliable packers and movers Jeddah"
+  ],
   robots: "index, follow",
   openGraph: {
-    title: "Moving Services in Saudi Arabia – Azan Packers & Movers",
+    title: "Best Moving Services in Saudi Arabia | Professional Packers & Movers",
     description:
-      "Discover comprehensive moving services in Saudi Arabia from Azan Packers & Movers. We offer house moving, office relocation, packing, unpacking, loading, unloading, jeipsing opening and closing, and furniture dismantling.",
+      "Top-rated moving services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands of families and businesses.",
     url: "https://www.azanmovers.com/services",
-    siteName: "Azan Packers & Movers",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
     type: "website",
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moving Services in Saudi Arabia – Azan Packers & Movers",
+    title: "Best Moving Services in Saudi Arabia | Professional Packers & Movers",
     description:
-      "Your trusted partner for all moving needs in Saudi Arabia: house moving, office relocation, and specialized services. Get a free quote today!",
+      "Top-rated moving services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Get free quote today!",
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"]
   },
 };
 
@@ -139,19 +153,40 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Moving Services",
+  name: "Best Moving Services in Saudi Arabia",
+  description: "Professional moving services including house moving, office relocation, furniture dismantling, packing, and storage solutions in Jeddah and across Saudi Arabia.",
   provider: {
-    "@type": "LocalBusiness",
+    "@type": "MovingCompany",
     name: "Azan Packers & Movers",
+    alternateName: "Azan Movers",
     url: "https://www.azanmovers.com",
-    telephone: "+966551234567",
+    telephone: "+966593694941",
+    email: "info@azanmovers.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Al Aziziyah, Saudi Arabia",
-      addressLocality: "Saudi Arabia",
+      streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
+      addressLocality: "Jeddah",
       addressRegion: "Makkah Province",
-      postalCode: "23334",
+      postalCode: "23443",
       addressCountry: "SA",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "150",
+      bestRating: "5",
+      worstRating: "1"
+    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Jeddah"
+      },
+      {
+        "@type": "Country",
+        name: "Saudi Arabia"
+      }
+    ]
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

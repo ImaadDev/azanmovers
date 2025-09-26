@@ -15,26 +15,35 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
+  title: "Best Moving Company in Saudi Arabia | Azan Packers & Movers Jeddah",
   description:
-    "Professional packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling services.",
+    "Top-rated moving company in Saudi Arabia. Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia.",
   keywords: [
-    "Packers and Movers Jeddah",
-    "House Moving Jeddah",
-    "Office Relocation Jeddah",
-    "Furniture Dismantling Jeddah",
+    "best moving company Saudi Arabia",
+    "top movers Jeddah",
+    "professional packers and movers Saudi Arabia",
+    "house moving services Jeddah",
+    "office relocation Saudi Arabia",
+    "furniture dismantling Jeddah",
+    "moving company Jeddah",
+    "packers and movers Saudi Arabia",
+    "reliable movers Jeddah",
+    "affordable moving services Saudi Arabia",
+    "international movers Jeddah",
+    "storage solutions Saudi Arabia"
   ],
   openGraph: {
-    title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
+    title: "Best Moving Company in Saudi Arabia | Azan Packers & Movers",
     description:
-      "Reliable packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling.",
+      "Top-rated moving company in Saudi Arabia. Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses.",
     url: "https://www.azanmovers.com",
-    siteName: "Azan Packers & Movers",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
     images: [
       {
-        url: "https://www.azanmovers.com/og-image.jpg",
+        url: "https://www.azanmovers.com/azanmovers-logo.png",
         width: 1200,
         height: 630,
+        alt: "Azan Packers & Movers - Best Moving Company in Saudi Arabia"
       },
     ],
     locale: "en_US",
@@ -42,11 +51,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
+    title: "Best Moving Company in Saudi Arabia | Azan Packers & Movers",
     description:
-      "Reliable packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling.",
+      "Top-rated moving company in Saudi Arabia. Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services.",
     creator: "@AzanMovers",
-    images: ["https://www.azanmovers.com/og-image.jpg"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
   icons: {
     icon: [
@@ -61,10 +70,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const localBusinessData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "MovingCompany",
     name: "Azan Packers & Movers",
+    alternateName: "Azan Movers",
+    description: "Best moving company in Saudi Arabia offering professional house moving, office relocation, furniture dismantling, and storage services in Jeddah and across Saudi Arabia.",
     image: "https://www.azanmovers.com/azanmovers-logo.png",
-    telephone: "+966551234567",
+    logo: "https://www.azanmovers.com/azanmovers-logo.png",
+    telephone: "+966593694941",
+    email: "info@azanmovers.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
@@ -75,6 +88,62 @@ export default function RootLayout({ children }) {
     },
     url: "https://www.azanmovers.com",
     openingHours: "Mo-Su 08:00-22:00",
+    priceRange: "$$",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "150",
+      bestRating: "5",
+      worstRating: "1"
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Moving Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "House Moving Services",
+            description: "Professional house moving services in Jeddah and Saudi Arabia"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Office Relocation",
+            description: "Complete office relocation services for businesses"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Furniture Dismantling",
+            description: "Expert furniture dismantling and assembly services"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Storage Solutions",
+            description: "Secure storage solutions for your belongings"
+          }
+        }
+      ]
+    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Jeddah"
+      },
+      {
+        "@type": "Country",
+        name: "Saudi Arabia"
+      }
+    ],
     sameAs: [
       "https://www.facebook.com/AzanMovers",
       "https://www.instagram.com/AzanMovers",
