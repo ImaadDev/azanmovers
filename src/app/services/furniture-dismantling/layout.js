@@ -16,8 +16,8 @@ const structuredData = {
   },
   serviceType: "Furniture Dismantling",
   description: "Expert furniture dismantling and assembly to protect your belongings in Saudi Arabia.",
-  url: "https://azanmovers.vercel.app/services/furniture-dismantling",
-  image: "https://azanmovers.vercel.app/images/furniture-dismantling.jpg"
+  url: "https://www.azanmovers.com/services/furniture-dismantling",
+  image: "https://www.azanmovers.com/images/furniture-dismantling.jpg"
 };
 
 const breadcrumbData = {
@@ -28,19 +28,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app"
+      item: "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://azanmovers.vercel.app/services"
+      item: "https://www.azanmovers.com/services"
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Furniture Dismantling",
-      item: "https://azanmovers.vercel.app/services/furniture-dismantling"
+      item: "https://www.azanmovers.com/services/furniture-dismantling"
     }
   ]
 };
@@ -49,15 +49,15 @@ export const metadata = {
   title: "Furniture Dismantling & Assembly in Saudi Arabia | Azan Packers & Movers",
   description:
     "Professional furniture dismantling and reassembly services in Saudi Arabia. Ensure safe transport of your valuable furniture with Azan Packers & Movers.",
-  canonical: "https://azanmovers.vercel.app/services/furniture-dismantling",
+  canonical: "https://www.azanmovers.com/services/furniture-dismantling",
   robots: "index, follow",
   openGraph: {
     type: "article",
     title: "Furniture Dismantling & Assembly in Saudi Arabia | Azan Packers & Movers",
     description:
       "Professional furniture dismantling and reassembly services in Saudi Arabia. Ensure safe transport of your valuable furniture with Azan Packers & Movers.",
-    url: "https://azanmovers.vercel.app/services/furniture-dismantling",
-    images: ["https://azanmovers.vercel.app/images/furniture-dismantling.jpg"],
+    url: "https://www.azanmovers.com/services/furniture-dismantling",
+    images: ["https://www.azanmovers.com/images/furniture-dismantling.jpg"],
   },
   script: [
     {

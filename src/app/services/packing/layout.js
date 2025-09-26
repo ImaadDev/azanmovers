@@ -16,8 +16,8 @@ const structuredData = {
   },
   serviceType: "Packing Services",
   description: "Professional packing and unpacking services for a stress-free move in Saudi Arabia.",
-  url: "https://azanmovers.vercel.app/services/packing",
-  image: "https://azanmovers.vercel.app/images/packing-services.jpg"
+  url: "https://www.azanmovers.com/services/packing",
+  image: "https://www.azanmovers.com/images/packing-services.jpg"
 };
 
 const breadcrumbData = {
@@ -28,19 +28,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app"
+      item: "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://azanmovers.vercel.app/services"
+      item: "https://www.azanmovers.com/services"
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Packing Services",
-      item: "https://azanmovers.vercel.app/services/packing"
+      item: "https://www.azanmovers.com/services/packing"
     }
   ]
 };
@@ -49,15 +49,15 @@ export const metadata = {
   title: "Packing & Unpacking Services in Saudi Arabia | Azan Packers & Movers",
   description:
     "Expert packing and unpacking services in Saudi Arabia. Secure your belongings with Azan Packers & Movers for a hassle-free relocation.",
-  canonical: "https://azanmovers.vercel.app/services/packing",
+  canonical: "https://www.azanmovers.com/services/packing",
   robots: "index, follow",
   openGraph: {
     type: "article",
     title: "Packing & Unpacking Services in Saudi Arabia | Azan Packers & Movers",
     description:
       "Expert packing and unpacking services in Saudi Arabia. Secure your belongings with Azan Packers & Movers for a hassle-free relocation.",
-    url: "https://azanmovers.vercel.app/services/packing",
-    images: ["https://azanmovers.vercel.app/images/packing-services.jpg"],
+    url: "https://www.azanmovers.com/services/packing",
+    images: ["https://www.azanmovers.com/images/packing-services.jpg"],
   },
   script: [
     {

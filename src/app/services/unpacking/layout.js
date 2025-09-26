@@ -13,7 +13,7 @@ export const metadata = {
     title: "Unpacking Services – Azan Packers & Movers Saudi Arabia",
     description:
       "Let Azan Packers & Movers handle your unpacking needs. Fast, organized, and careful unpacking services for homes and offices in Saudi Arabia.",
-    url: "https://azanmovers.vercel.app/services/unpacking",
+    url: "https://www.azanmovers.com/services/unpacking",
     siteName: "Azan Packers & Movers",
     type: "website",
   },

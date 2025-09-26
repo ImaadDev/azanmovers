@@ -28,11 +28,11 @@ export const metadata = {
     title: "Azan Packers & Movers – Jeddah, Saudi Arabia",
     description:
       "Reliable packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling.",
-    url: "https://azanmovers.vercel.app",
+    url: "https://www.azanmovers.com",
     siteName: "Azan Packers & Movers",
     images: [
       {
-        url: "https://azanmovers.vercel.app/og-image.jpg",
+        url: "https://www.azanmovers.com/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -46,7 +46,7 @@ export const metadata = {
     description:
       "Reliable packers and movers in Jeddah, Saudi Arabia. Located at Ibn Qasim Al Khawarizmi Al Bawadi, we offer house moving, office relocation, and furniture dismantling.",
     creator: "@AzanMovers",
-    images: ["https://azanmovers.vercel.app/og-image.jpg"],
+    images: ["https://www.azanmovers.com/og-image.jpg"],
   },
   icons: {
     apple: "/apple-touch-icon.png",
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Azan Packers & Movers",
-    image: "https://azanmovers.vercel.app/logo.png",
+    image: "https://www.azanmovers.com/logo.png",
     telephone: "+966551234567",
     address: {
       "@type": "PostalAddress",
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
       postalCode: "23443",
       addressCountry: "SA",
     },
-    url: "https://azanmovers.vercel.app",
+    url: "https://www.azanmovers.com",
     openingHours: "Mo-Su 08:00-22:00",
     sameAs: [
       "https://www.facebook.com/AzanMovers",

@@ -17,11 +17,11 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "ImageGallery",
   "name": "Azan Packers & Movers Gallery",
-  "url": "https://azanmovers.vercel.app/gallery",
+  "url": "https://www.azanmovers.com/gallery",
   "description": "Gallery of house moving, office relocation, and furniture dismantling services in Saudi Arabia.",
   "image": galleryImages.map((img) => ({
     "@type": "ImageObject",
-    "url": `https://azanmovers.vercel.app${img.src}`,
+    "url": `https://www.azanmovers.com${img.src}`,
     "name": img.title,
     "caption": img.alt
   })),
@@ -34,12 +34,12 @@ const structuredData = {
     "name": "Azan Packers & Movers",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://azanmovers.vercel.app/logo.png"
+      "url": "https://www.azanmovers.com/logo.png"
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://azanmovers.vercel.app/gallery"
+    "@id": "https://www.azanmovers.com/gallery"
   }
 };
 
@@ -51,19 +51,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://azanmovers.vercel.app"
+      "item": "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://azanmovers.vercel.app/services"
+      "item": "https://www.azanmovers.com/services"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Gallery",
-      "item": "https://azanmovers.vercel.app/gallery"
+      "item": "https://www.azanmovers.com/gallery"
     }
   ]
 };
@@ -76,17 +76,17 @@ export const metadata = {
     title: "Gallery – Azan Packers & Movers Saudi Arabia",
     description:
       "View our extensive gallery showcasing house moving, office relocation, packing, loading, and unloading services by Azan Packers & Movers in Saudi Arabia.",
-    url: "https://azanmovers.vercel.app/gallery",
+    url: "https://www.azanmovers.com/gallery",
     siteName: "Azan Packers & Movers",
     type: "website",
-    images: galleryImages.map(img => `https://azanmovers.vercel.app${img.src}`),
+    images: galleryImages.map(img => `https://www.azanmovers.com${img.src}`),
   },
   twitter: {
     card: "summary_large_image",
     title: "Gallery – Azan Packers & Movers Saudi Arabia",
     description:
       "See our professional moving operations in Saudi Arabia. Azan Packers & Movers provides top-notch services for all your relocation needs.",
-    images: galleryImages.map(img => `https://azanmovers.vercel.app${img.src}`),
+    images: galleryImages.map(img => `https://www.azanmovers.com${img.src}`),
   },
   robots: "index, follow",
   script: [

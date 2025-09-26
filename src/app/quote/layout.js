@@ -16,11 +16,11 @@ export const metadata = {
     title: "Request a Free Moving Quote – Azan Packers & Movers Saudi Arabia",
     description:
       "Receive your free, no-obligation moving quotation from Azan Packers & Movers. Expert packing, safe transportation, and hassle-free house or office relocation in Saudi Arabia.",
-    url: "https://azanmovers.vercel.app/get-quote",
+    url: "https://www.azanmovers.com/get-quote",
     siteName: "Azan Packers & Movers",
     images: [
       {
-        url: "https://azanmovers.vercel.app/images/moving-quote.jpg",
+        url: "https://www.azanmovers.com/images/moving-quote.jpg",
         width: 1200,
         height: 630,
         alt: "Azan Packers & Movers – Free Moving Quote",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Request a Free Moving Quote – Azan Packers & Movers Saudi Arabia",
     description:
       "Fill out the form to get your free moving quotation from Azan Packers & Movers. Safe, professional house & office relocation in Saudi Arabia.",
-    images: ["https://azanmovers.vercel.app/images/moving-quote.jpg"],
+    images: ["https://www.azanmovers.com/images/moving-quote.jpg"],
   },
 };
 

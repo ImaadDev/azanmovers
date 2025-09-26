@@ -58,7 +58,7 @@ export const metadata = {
   description:
     "Find answers to common questions about moving services, pricing, insurance, and service areas in Saudi Arabia with Azan Packers & Movers.",
   robots: "index, follow",
-  canonical: "https://azanmovers.vercel.app/faq",
+  canonical: "https://www.azanmovers.com/faq",
 
   // Open Graph / Facebook
   openGraph: {
@@ -66,8 +66,8 @@ export const metadata = {
     title: "FAQ – Azan Packers & Movers Saudi Arabia",
     description:
       "Your questions about moving in Saudi Arabia answered. Get details on services, pricing, and more from Azan Packers & Movers.",
-    url: "https://azanmovers.vercel.app/faq",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    url: "https://www.azanmovers.com/faq",
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Twitter
@@ -76,7 +76,7 @@ export const metadata = {
     title: "FAQ – Azan Packers & Movers Saudi Arabia",
     description:
       "Common questions about moving and relocation services in Saudi Arabia. Azan Packers & Movers has the answers.",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Structured Data

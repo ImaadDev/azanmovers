@@ -13,7 +13,7 @@ const structuredData = {
     addressCountry: "SA",
   },
   telephone: "+966551234567",
-  url: "https://azanmovers.vercel.app/about",
+  url: "https://www.azanmovers.com/about",
   openingHours: "Mo-Su 08:00-22:00",
   serviceType: ["Home Moving", "Villas Moving", "Office Relocation", "Furniture Dismantling"],
 };
@@ -26,13 +26,13 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app",
+      item: "https://www.azanmovers.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "About Us",
-      item: "https://azanmovers.vercel.app/about",
+      item: "https://www.azanmovers.com/about",
     },
   ],
 };
@@ -42,7 +42,7 @@ export const metadata = {
   description:
     "Learn about Azan Packers & Movers, a trusted moving company in Saudi Arabia since 2015. Discover our story, mission, and commitment to quality service for homes, villas, and offices.",
   robots: "index, follow",
-  canonical: "https://azanmovers.vercel.app/about",
+  canonical: "https://www.azanmovers.com/about",
 
   // Open Graph / Facebook
   openGraph: {
@@ -50,8 +50,8 @@ export const metadata = {
     title: "About Azan Packers & Movers – Trusted Movers in Saudi Arabia",
     description:
       "Learn about Azan Packers & Movers – Saudi Arabia's professional movers for homes, villas, offices, and furniture.",
-    url: "https://azanmovers.vercel.app/about",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    url: "https://www.azanmovers.com/about",
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Twitter
@@ -60,7 +60,7 @@ export const metadata = {
     title: "About Azan Packers & Movers – Trusted Movers in Saudi Arabia",
     description:
       "Professional moving company in Saudi Arabia since 2015. Home, villa, office moving & furniture dismantling.",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Structured Data

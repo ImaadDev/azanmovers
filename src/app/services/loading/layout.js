@@ -13,7 +13,7 @@ export const metadata = {
     title: "Loading Services – Azan Packers & Movers Saudi Arabia",
     description:
       "Trust Azan Packers & Movers for efficient and secure loading services in Saudi Arabia. We handle your items with utmost care.",
-    url: "https://azanmovers.vercel.app/services/loading",
+    url: "https://www.azanmovers.com/services/loading",
     siteName: "Azan Packers & Movers",
     type: "website",
   },

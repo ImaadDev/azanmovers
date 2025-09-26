@@ -14,7 +14,7 @@ export const metadata = {
     title: "Jeipsing Opening Services – Azan Packers & Movers Saudi Arabia",
     description:
       "Expert jeipsing opening services by Azan Packers & Movers. Safe and secure unpacking of your specialized cargo in Saudi Arabia.",
-    url: "https://azanmovers.vercel.app/services/jeipsing-opening",
+    url: "https://www.azanmovers.com/services/jeipsing-opening",
     siteName: "Azan Packers & Movers",
     type: "website",
   },

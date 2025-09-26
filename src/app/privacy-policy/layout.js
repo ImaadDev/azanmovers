@@ -14,7 +14,7 @@ export const metadata = {
     title: "Privacy Policy – Azan Packers & Movers Saudi Arabia",
     description:
       "Your privacy matters. Learn about our data collection and protection practices at Azan Packers & Movers, your trusted moving company in Saudi Arabia.",
-    url: "https://azanmovers.vercel.app/privacy-policy",
+    url: "https://www.azanmovers.com/privacy-policy",
     siteName: "Azan Packers & Movers",
     type: "website",
   },

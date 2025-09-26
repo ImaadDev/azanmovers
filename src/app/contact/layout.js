@@ -1,11 +1,11 @@
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://azanmovers.vercel.app#business",
+  "@id": "https://www.azanmovers.com#business",
   name: "Azan Packers & Movers",
   description:
     "Azan Packers & Movers in Saudi Arabia provides professional home, villa, office relocation, and furniture dismantling services across Saudi Arabia.",
-  image: "https://azanmovers.vercel.app/logo.png", // replace with your logo URL
+  image: "https://www.azanmovers.com/logo.png", // replace with your logo URL
   address: {
     "@type": "PostalAddress",
     streetAddress: "Al Aziziyah, Saudi Arabia",
@@ -16,7 +16,7 @@ const structuredData = {
   },
   telephone: "+966551234567",
   email: "info@azanmovers.com",
-  url: "https://azanmovers.vercel.app",
+  url: "https://www.azanmovers.com",
   geo: {
     "@type": "GeoCoordinates",
     latitude: "21.543333", // Jeddah coordinates
@@ -38,13 +38,13 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app"
+      item: "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Contact",
-      item: "https://azanmovers.vercel.app/contact"
+      item: "https://www.azanmovers.com/contact"
     }
   ]
 };
@@ -54,7 +54,7 @@ export const metadata = {
   description:
     "Contact Azan Packers & Movers in Saudi Arabia for house shifting, villa relocation, office relocation, and furniture moving. Call us today for a free moving quote!",
   robots: "index, follow",
-  canonical: "https://azanmovers.vercel.app/contact",
+  canonical: "https://www.azanmovers.com/contact",
 
   // Open Graph / Facebook
   openGraph: {
@@ -62,8 +62,8 @@ export const metadata = {
     title: "Contact Azan Packers & Movers – Saudi Arabia",
     description:
       "Get in touch with Azan Packers & Movers in Saudi Arabia for reliable and efficient moving services for homes, villas, and offices.",
-    url: "https://azanmovers.vercel.app/contact",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    url: "https://www.azanmovers.com/contact",
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Twitter
@@ -72,7 +72,7 @@ export const metadata = {
     title: "Contact Azan Packers & Movers – Saudi Arabia",
     description:
       "Reach out to Azan Packers & Movers in Saudi Arabia for all your relocation needs. Free quotes available!",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Structured Data

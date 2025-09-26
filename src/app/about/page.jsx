@@ -16,7 +16,7 @@ export default function AboutPage() {
       addressCountry: "SA",
     },
     telephone: "+966551234567",
-    url: "https://azanmovers.vercel.app/about",
+    url: "https://www.azanmovers.com/about",
     openingHours: "Mo-Su 08:00-22:00",
     serviceType: ["House Moving", "Office Relocation", "Furniture Dismantling"],
   };
@@ -29,13 +29,13 @@ export default function AboutPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://azanmovers.vercel.app",
+        item: "https://www.azanmovers.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "About Us",
-        item: "https://azanmovers.vercel.app/about",
+        item: "https://www.azanmovers.com/about",
       },
     ],
   };

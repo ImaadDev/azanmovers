@@ -7,7 +7,7 @@ export const metadata = {
     title: "Moving Services in Saudi Arabia – Azan Packers & Movers",
     description:
       "Discover comprehensive moving services in Saudi Arabia from Azan Packers & Movers. We offer house moving, office relocation, packing, unpacking, loading, unloading, jeipsing opening and closing, and furniture dismantling.",
-    url: "https://azanmovers.vercel.app/services",
+    url: "https://www.azanmovers.com/services",
     siteName: "Azan Packers & Movers",
     type: "website",
   },
@@ -142,7 +142,7 @@ const structuredData = {
   provider: {
     "@type": "LocalBusiness",
     name: "Azan Packers & Movers",
-    url: "https://azanmovers.vercel.app",
+    url: "https://www.azanmovers.com",
     telephone: "+966551234567",
     address: {
       "@type": "PostalAddress",

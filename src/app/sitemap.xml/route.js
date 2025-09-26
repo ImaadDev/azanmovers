@@ -4,37 +4,37 @@ export async function GET() {
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://azanmovers.vercel.app/</loc>
+        <loc>https://www.azanmovers.com/</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
       </url>
       <url>
-        <loc>https://azanmovers.vercel.app/about</loc>
+        <loc>https://www.azanmovers.com/about</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
       </url>
       <url>
-        <loc>https://azanmovers.vercel.app/services</loc>
+        <loc>https://www.azanmovers.com/services</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
       </url>
       <url>
-        <loc>https://azanmovers.vercel.app/blogs</loc>
+        <loc>https://www.azanmovers.com/blogs</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
       </url>
       <url>
-        <loc>https://azanmovers.vercel.app/contact</loc>
+        <loc>https://www.azanmovers.com/contact</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>https://azanmovers.vercel.app/faqs</loc>
+        <loc>https://www.azanmovers.com/faqs</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>

@@ -16,8 +16,8 @@ const structuredData = {
   },
   serviceType: "House Moving",
   description: "Safe and efficient house moving services for families in Saudi Arabia.",
-  url: "https://azanmovers.vercel.app/services/house-moving",
-  image: "https://azanmovers.vercel.app/images/house-moving.jpg"
+  url: "https://www.azanmovers.com/services/house-moving",
+  image: "https://www.azanmovers.com/images/house-moving.jpg"
 };
 
 const breadcrumbData = {
@@ -28,19 +28,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app"
+      item: "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://azanmovers.vercel.app/services"
+      item: "https://www.azanmovers.com/services"
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "House Moving",
-      item: "https://azanmovers.vercel.app/services/house-moving"
+      item: "https://www.azanmovers.com/services/house-moving"
     }
   ]
 };
@@ -49,15 +49,15 @@ export const metadata = {
   title: "House Moving Services in Saudi Arabia | Azan Packers & Movers",
   description:
     "Experience seamless house moving in Saudi Arabia with Azan Packers & Movers. Professional, safe, and efficient relocation solutions for your home.",
-  canonical: "https://azanmovers.vercel.app/services/house-moving",
+  canonical: "https://www.azanmovers.com/services/house-moving",
   robots: "index, follow",
   openGraph: {
     type: "article",
     title: "House Moving Services in Saudi Arabia | Azan Packers & Movers",
     description:
       "Experience seamless house moving in Saudi Arabia with Azan Packers & Movers. Professional, safe, and efficient relocation solutions for your home.",
-    url: "https://azanmovers.vercel.app/services/house-moving",
-    images: ["https://azanmovers.vercel.app/images/house-moving.jpg"],
+    url: "https://www.azanmovers.com/services/house-moving",
+    images: ["https://www.azanmovers.com/images/house-moving.jpg"],
   },
   script: [
     {

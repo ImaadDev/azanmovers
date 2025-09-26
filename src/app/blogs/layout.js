@@ -6,13 +6,13 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app"
+      item: "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://azanmovers.vercel.app/blogs"
+      item: "https://www.azanmovers.com/blogs"
     }
   ]
 };
@@ -23,13 +23,13 @@ const blogSchema = {
   name: "Azan Movers Blog",
   description:
     "Moving tips, relocation guides, and insights from Azan Packers & Movers in Saudi Arabia.",
-  url: "https://azanmovers.vercel.app/blogs",
+  url: "https://www.azanmovers.com/blogs",
   publisher: {
     "@type": "Organization",
     name: "Azan Packers & Movers",
     logo: {
       "@type": "ImageObject",
-      url: "https://azanmovers.vercel.app/logo.png"
+      url: "https://www.azanmovers.com/logo.png"
     }
   }
 };
@@ -39,7 +39,7 @@ export const metadata = {
   description:
     "Explore the Azan Packers & Movers blog for moving tips, office relocation checklists, and furniture dismantling guides in Saudi Arabia.",
   robots: "index, follow",
-  canonical: "https://azanmovers.vercel.app/blogs",
+  canonical: "https://www.azanmovers.com/blogs",
 
   // Open Graph / Facebook
   openGraph: {
@@ -47,8 +47,8 @@ export const metadata = {
     title: "Blog – Azan Packers & Movers Saudi Arabia",
     description:
       "Moving tips, relocation checklists, and furniture guides from Azan Packers & Movers Saudi Arabia.",
-    url: "https://azanmovers.vercel.app/blogs",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    url: "https://www.azanmovers.com/blogs",
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Twitter
@@ -57,7 +57,7 @@ export const metadata = {
     title: "Blog – Azan Packers & Movers Saudi Arabia",
     description:
       "Helpful moving tips, relocation checklists, and guides by Azan Packers & Movers in Saudi Arabia.",
-    images: ["https://azanmovers.vercel.app/logo.png"],
+    images: ["https://www.azanmovers.com/logo.png"],
   },
 
   // Structured Data

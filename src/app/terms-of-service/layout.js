@@ -14,7 +14,7 @@ export const metadata = {
     title: "Terms of Service – Azan Packers & Movers Saudi Arabia",
     description:
       "Understand your rights and obligations when using Azan Packers & Movers services. Review our comprehensive Terms of Service.",
-    url: "https://azanmovers.vercel.app/terms-of-service",
+    url: "https://www.azanmovers.com/terms-of-service",
     siteName: "Azan Packers & Movers",
     type: "website",
   },

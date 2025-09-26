@@ -16,8 +16,8 @@ const structuredData = {
   },
   serviceType: "Office Relocation",
   description: "Professional office relocation ensuring minimal downtime for your business in Saudi Arabia.",
-  url: "https://azanmovers.vercel.app/services/office-relocation",
-  image: "https://azanmovers.vercel.app/images/office-relocation.jpg"
+  url: "https://www.azanmovers.com/services/office-relocation",
+  image: "https://www.azanmovers.com/images/office-relocation.jpg"
 };
 
 const breadcrumbData = {
@@ -28,19 +28,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://azanmovers.vercel.app"
+      item: "https://www.azanmovers.com"
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: "https://azanmovers.vercel.app/services"
+      item: "https://www.azanmovers.com/services"
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Office Relocation",
-      item: "https://azanmovers.vercel.app/services/office-relocation"
+      item: "https://www.azanmovers.com/services/office-relocation"
     }
   ]
 };
@@ -49,15 +49,15 @@ export const metadata = {
   title: "Office Relocation Services in Saudi Arabia | Azan Packers & Movers",
   description:
     "Professional office relocation services in Saudi Arabia by Azan Packers & Movers. Ensure minimal business disruption with our efficient moving solutions.",
-  canonical: "https://azanmovers.vercel.app/services/office-relocation",
+  canonical: "https://www.azanmovers.com/services/office-relocation",
   robots: "index, follow",
   openGraph: {
     type: "article",
     title: "Office Relocation Services in Saudi Arabia | Azan Packers & Movers",
     description:
       "Professional office relocation services in Saudi Arabia by Azan Packers & Movers. Ensure minimal business disruption with our efficient moving solutions.",
-    url: "https://azanmovers.vercel.app/services/office-relocation",
-    images: ["https://azanmovers.vercel.app/images/office-relocation.jpg"],
+    url: "https://www.azanmovers.com/services/office-relocation",
+    images: ["https://www.azanmovers.com/images/office-relocation.jpg"],
   },
   script: [
     {

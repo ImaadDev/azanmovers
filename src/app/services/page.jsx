@@ -159,7 +159,7 @@ export default function ServicesPage() {
     provider: {
       "@type": "LocalBusiness",
       name: "Azan Packers & Movers",
-      url: "https://azanmovers.vercel.app",
+      url: "https://www.azanmovers.com",
       telephone: "+966551234567",
       address: {
         "@type": "PostalAddress",
