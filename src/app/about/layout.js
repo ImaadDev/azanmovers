@@ -51,7 +51,7 @@ export const metadata = {
     description:
       "Learn about Azan Packers & Movers – Saudi Arabia's professional movers for homes, villas, offices, and furniture.",
     url: "https://www.azanmovers.com/about",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Twitter
@@ -60,7 +60,7 @@ export const metadata = {
     title: "About Azan Packers & Movers – Trusted Movers in Saudi Arabia",
     description:
       "Professional moving company in Saudi Arabia since 2015. Home, villa, office moving & furniture dismantling.",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Structured Data

@@ -5,7 +5,7 @@ const structuredData = {
   name: "Azan Packers & Movers",
   description:
     "Azan Packers & Movers in Saudi Arabia provides professional home, villa, office relocation, and furniture dismantling services across Saudi Arabia.",
-  image: "https://www.azanmovers.com/logo.png", // replace with your logo URL
+  image: "https://www.azanmovers.com/azanmovers-logo.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Al Aziziyah, Saudi Arabia",
@@ -63,7 +63,7 @@ export const metadata = {
     description:
       "Get in touch with Azan Packers & Movers in Saudi Arabia for reliable and efficient moving services for homes, villas, and offices.",
     url: "https://www.azanmovers.com/contact",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Twitter
@@ -72,7 +72,7 @@ export const metadata = {
     title: "Contact Azan Packers & Movers – Saudi Arabia",
     description:
       "Reach out to Azan Packers & Movers in Saudi Arabia for all your relocation needs. Free quotes available!",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Structured Data

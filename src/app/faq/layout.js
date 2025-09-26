@@ -67,7 +67,7 @@ export const metadata = {
     description:
       "Your questions about moving in Saudi Arabia answered. Get details on services, pricing, and more from Azan Packers & Movers.",
     url: "https://www.azanmovers.com/faq",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Twitter
@@ -76,7 +76,7 @@ export const metadata = {
     title: "FAQ – Azan Packers & Movers Saudi Arabia",
     description:
       "Common questions about moving and relocation services in Saudi Arabia. Azan Packers & Movers has the answers.",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Structured Data

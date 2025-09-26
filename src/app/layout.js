@@ -49,7 +49,12 @@ export const metadata = {
     images: ["https://www.azanmovers.com/og-image.jpg"],
   },
   icons: {
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/azanmovers-logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/azanmovers-logo.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/azanmovers-logo.png",
+    shortcut: "/azanmovers-logo.png",
   },
 };
 
@@ -58,7 +63,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Azan Packers & Movers",
-    image: "https://www.azanmovers.com/logo.png",
+    image: "https://www.azanmovers.com/azanmovers-logo.png",
     telephone: "+966551234567",
     address: {
       "@type": "PostalAddress",

@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import azanmoversLogo from '../../public/azanmovers-logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -109,16 +111,17 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-3 group transition-transform duration-300 hover:scale-105 focus:outline-none focus:scale-105"
+            className="flex items-center group transition-transform duration-300 hover:scale-105 focus:outline-none focus:scale-105"
           >
-            <div
-              className="w-12 h-12 flex items-center justify-center transition-all duration-300 group-hover:rotate-12"
-              style={{ backgroundColor: '#ED3F27' }}
-            >
-              <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 8l2 2 4-4" />
-              </svg>
+            <div className="w-30 h-30 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+              <Image
+                src={azanmoversLogo}
+                alt="Azan Movers Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <div className="text-2xl font-black tracking-tight" style={{ color: '#374151' }}>

@@ -29,7 +29,7 @@ const blogSchema = {
     name: "Azan Packers & Movers",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.azanmovers.com/logo.png"
+      url: "https://www.azanmovers.com/azanmovers-logo.png"
     }
   }
 };
@@ -48,7 +48,7 @@ export const metadata = {
     description:
       "Moving tips, relocation checklists, and furniture guides from Azan Packers & Movers Saudi Arabia.",
     url: "https://www.azanmovers.com/blogs",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Twitter
@@ -57,7 +57,7 @@ export const metadata = {
     title: "Blog – Azan Packers & Movers Saudi Arabia",
     description:
       "Helpful moving tips, relocation checklists, and guides by Azan Packers & Movers in Saudi Arabia.",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 
   // Structured Data

@@ -34,7 +34,7 @@ const structuredData = {
     "name": "Azan Packers & Movers",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.azanmovers.com/logo.png"
+      "url": "https://www.azanmovers.com/azanmovers-logo.png"
     }
   },
   "mainEntityOfPage": {

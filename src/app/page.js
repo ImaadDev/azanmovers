@@ -33,14 +33,14 @@ export const metadata = {
     description:
       "Azan Packers & Movers – Trusted moving company in Saudi Arabia offering home moving, villa relocation, office relocation, and furniture dismantling services.",
     url: "https://www.azanmovers.com",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Azan Packers & Movers – Saudi Arabia",
     description:
       "Trusted moving company in Saudi Arabia offering home moving, villa relocation, office relocation, and furniture dismantling services.",
-    images: ["https://www.azanmovers.com/logo.png"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
   script: [
     { 
