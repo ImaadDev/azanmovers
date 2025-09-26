@@ -1,7 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import { trackServiceView, trackQuoteRequest } from "../../../utils/analytics";
+import { useAnalytics } from "../../../hooks/useAnalytics";
 
 export default function HouseMoving() {
+  // Track analytics for this service page
+  useAnalytics();
+  
+  useEffect(() => {
+    trackServiceView('House Moving');
+  }, []);
 
   return (
     <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
@@ -142,6 +151,7 @@ export default function HouseMoving() {
             className="group relative inline-flex items-center px-10 py-4 text-sm md:text-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-200"
             style={{ backgroundColor: '#ED3F27' }}
             aria-label="Get a free moving quote from Azan Packers & Movers"
+            onClick={() => trackQuoteRequest('House Moving')}
           >
             <span className="relative z-10">Get Your Free Quote</span>
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
