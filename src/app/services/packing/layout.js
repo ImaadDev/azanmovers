@@ -46,18 +46,34 @@ const breadcrumbData = {
 };
 
 export const metadata = {
-  title: "Packing & Unpacking Services in Saudi Arabia | Azan Packers & Movers",
+  title: "🏆 Best Packing & Unpacking Services in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Expert packing and unpacking services in Saudi Arabia. Secure your belongings with Azan Packers & Movers for a hassle-free relocation.",
+    "🏆 #1 Best Packing & Unpacking Services in Saudi Arabia! Expert packing and unpacking services in Jeddah. Secure your belongings with Azan Packers & Movers for a hassle-free relocation. Professional service trusted by thousands!",
+  keywords: [
+    "best packing services Saudi Arabia",
+    "best unpacking services Jeddah",
+    "top packing company Saudi Arabia",
+    "professional packing services Jeddah",
+    "packing and unpacking Saudi Arabia",
+    "moving packing services Jeddah",
+    "house packing Saudi Arabia",
+    "office packing Jeddah",
+    "packing company Saudi Arabia",
+    "unpacking services Jeddah",
+    "best packers Saudi Arabia",
+    "top packing services Jeddah",
+    "professional packing Saudi Arabia",
+    "reliable packing services Jeddah"
+  ],
   canonical: "https://www.azanmovers.com/services/packing",
   robots: "index, follow",
   openGraph: {
     type: "article",
-    title: "Packing & Unpacking Services in Saudi Arabia | Azan Packers & Movers",
+    title: "🏆 Best Packing & Unpacking Services in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Expert packing and unpacking services in Saudi Arabia. Secure your belongings with Azan Packers & Movers for a hassle-free relocation.",
+      "🏆 #1 Best Packing & Unpacking Services in Saudi Arabia! Expert packing and unpacking services in Jeddah. Secure your belongings with Azan Packers & Movers for a hassle-free relocation. Professional service trusted by thousands!",
     url: "https://www.azanmovers.com/services/packing",
-    images: ["https://www.azanmovers.com/images/packing-services.jpg"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
   script: [
     {

@@ -54,18 +54,30 @@ const faqStructuredData = {
 };
 
 export const metadata = {
-  title: "FAQ – Frequently Asked Questions | Azan Packers & Movers Saudi Arabia",
+  title: "FAQ | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Find answers to common questions about moving services, pricing, insurance, and service areas in Saudi Arabia with Azan Packers & Movers.",
+    "🏆 Find answers to common questions about the #1 best moving services, pricing, insurance, and service areas in Saudi Arabia with Azan Packers & Movers. Get expert answers about house moving, office relocation, and furniture services in Jeddah!",
+  keywords: [
+    "FAQ moving company Saudi Arabia",
+    "best movers FAQ Jeddah",
+    "moving services questions Saudi Arabia",
+    "house moving FAQ Jeddah",
+    "office relocation questions Saudi Arabia",
+    "furniture dismantling FAQ Jeddah",
+    "moving company questions Saudi Arabia",
+    "packers and movers FAQ Jeddah",
+    "moving services help Saudi Arabia",
+    "relocation questions Jeddah"
+  ],
   robots: "index, follow",
   canonical: "https://www.azanmovers.com/faq",
 
   // Open Graph / Facebook
   openGraph: {
     type: "website",
-    title: "FAQ – Azan Packers & Movers Saudi Arabia",
+    title: "FAQ | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Your questions about moving in Saudi Arabia answered. Get details on services, pricing, and more from Azan Packers & Movers.",
+      "🏆 Your questions about the #1 best moving services in Saudi Arabia answered! Get details on house moving, office relocation, furniture services, pricing, and more from Azan Packers & Movers in Jeddah.",
     url: "https://www.azanmovers.com/faq",
     images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
@@ -73,9 +85,9 @@ export const metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "FAQ – Azan Packers & Movers Saudi Arabia",
+    title: "FAQ | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Common questions about moving and relocation services in Saudi Arabia. Azan Packers & Movers has the answers.",
+      "🏆 Common questions about the #1 best moving and relocation services in Saudi Arabia. Azan Packers & Movers has all the answers for house moving, office relocation, and furniture services in Jeddah!",
     images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 

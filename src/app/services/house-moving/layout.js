@@ -46,18 +46,34 @@ const breadcrumbData = {
 };
 
 export const metadata = {
-  title: "House Moving Services in Saudi Arabia | Azan Packers & Movers",
+  title: "🏆 Best House Moving Services in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Experience seamless house moving in Saudi Arabia with Azan Packers & Movers. Professional, safe, and efficient relocation solutions for your home.",
+    "🏆 #1 Best House Moving Services in Saudi Arabia! Experience seamless house moving in Jeddah with Azan Packers & Movers. Professional, safe, and efficient relocation solutions for your home. Trusted by thousands of families!",
+  keywords: [
+    "best house moving services Saudi Arabia",
+    "best house movers in Jeddah",
+    "top house moving company Saudi Arabia",
+    "professional house movers Jeddah",
+    "house moving services Saudi Arabia",
+    "home relocation Jeddah",
+    "villa moving services Saudi Arabia",
+    "residential moving Jeddah",
+    "house shifting Saudi Arabia",
+    "home moving company Jeddah",
+    "best residential movers Saudi Arabia",
+    "top house movers Jeddah",
+    "professional home moving Saudi Arabia",
+    "reliable house movers Jeddah"
+  ],
   canonical: "https://www.azanmovers.com/services/house-moving",
   robots: "index, follow",
   openGraph: {
     type: "article",
-    title: "House Moving Services in Saudi Arabia | Azan Packers & Movers",
+    title: "🏆 Best House Moving Services in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Experience seamless house moving in Saudi Arabia with Azan Packers & Movers. Professional, safe, and efficient relocation solutions for your home.",
+      "🏆 #1 Best House Moving Services in Saudi Arabia! Experience seamless house moving in Jeddah with Azan Packers & Movers. Professional, safe, and efficient relocation solutions for your home. Trusted by thousands of families!",
     url: "https://www.azanmovers.com/services/house-moving",
-    images: ["https://www.azanmovers.com/images/house-moving.jpg"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
   script: [
     {

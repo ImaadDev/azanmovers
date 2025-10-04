@@ -50,18 +50,30 @@ const breadcrumbData = {
 };
 
 export const metadata = {
-  title: "Contact Azan Packers & Movers – Best Moving Company in Saudi Arabia",
+  title: "Contact Us | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Contact Azan Packers & Movers in Saudi Arabia for house shifting, villa relocation, office relocation, and furniture moving. Call us today for a free moving quote!",
+    "🏆 Contact Azan Packers & Movers, Saudi Arabia's #1 best moving company! Get in touch for house shifting, villa relocation, office relocation, and furniture moving in Jeddah. Call us today for a free moving quote!",
+  keywords: [
+    "contact Azan movers",
+    "best moving company Saudi Arabia contact",
+    "best movers in Jeddah contact",
+    "top moving company Saudi Arabia contact",
+    "professional movers Jeddah contact",
+    "moving company phone number Saudi Arabia",
+    "movers contact Jeddah",
+    "packers and movers contact Saudi Arabia",
+    "moving services contact Jeddah",
+    "free quote moving company Saudi Arabia"
+  ],
   robots: "index, follow",
   canonical: "https://www.azanmovers.com/contact",
 
   // Open Graph / Facebook
   openGraph: {
     type: "website",
-    title: "Contact Azan Packers & Movers – Saudi Arabia",
+    title: "Contact Us | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Get in touch with Azan Packers & Movers in Saudi Arabia for reliable and efficient moving services for homes, villas, and offices.",
+      "🏆 Contact Azan Packers & Movers, Saudi Arabia's #1 best moving company! Get in touch for reliable and efficient moving services for homes, villas, and offices in Jeddah and across Saudi Arabia.",
     url: "https://www.azanmovers.com/contact",
     images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
@@ -69,9 +81,9 @@ export const metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Contact Azan Packers & Movers – Saudi Arabia",
+    title: "Contact Us | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Reach out to Azan Packers & Movers in Saudi Arabia for all your relocation needs. Free quotes available!",
+      "🏆 Contact Azan Packers & Movers, Saudi Arabia's #1 best moving company! Reach out for all your relocation needs in Jeddah and across Saudi Arabia. Free quotes available!",
     images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
 

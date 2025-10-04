@@ -69,23 +69,35 @@ const breadcrumbData = {
 };
 
 export const metadata = {
-  title: "Gallery – Azan Packers & Movers Saudi Arabia",
+  title: "Gallery | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Explore the professional moving services of Azan Packers & Movers in Saudi Arabia through our gallery of house moving, office relocation, and furniture dismantling.",
+    "🏆 Explore the professional moving services of Azan Packers & Movers, Saudi Arabia's #1 best moving company! View our gallery of house moving, office relocation, and furniture dismantling services in Jeddah. See why thousands trust us!",
+  keywords: [
+    "moving company gallery Saudi Arabia",
+    "best movers gallery Jeddah",
+    "house moving photos Saudi Arabia",
+    "office relocation gallery Jeddah",
+    "furniture dismantling photos Saudi Arabia",
+    "moving services gallery Jeddah",
+    "packing services photos Saudi Arabia",
+    "loading unloading gallery Jeddah",
+    "moving truck photos Saudi Arabia",
+    "professional movers gallery Jeddah"
+  ],
   openGraph: {
-    title: "Gallery – Azan Packers & Movers Saudi Arabia",
+    title: "Gallery | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "View our extensive gallery showcasing house moving, office relocation, packing, loading, and unloading services by Azan Packers & Movers in Saudi Arabia.",
+      "🏆 View our extensive gallery showcasing the #1 best house moving, office relocation, packing, loading, and unloading services by Azan Packers & Movers in Saudi Arabia. See our professional work in Jeddah!",
     url: "https://www.azanmovers.com/gallery",
-    siteName: "Azan Packers & Movers",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
     type: "website",
     images: galleryImages.map(img => `https://www.azanmovers.com${img.src}`),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gallery – Azan Packers & Movers Saudi Arabia",
+    title: "Gallery | 🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "See our professional moving operations in Saudi Arabia. Azan Packers & Movers provides top-notch services for all your relocation needs.",
+      "🏆 See our professional moving operations in Saudi Arabia! Azan Packers & Movers, the #1 best moving company, provides top-notch services for all your relocation needs in Jeddah.",
     images: galleryImages.map(img => `https://www.azanmovers.com${img.src}`),
   },
   robots: "index, follow",

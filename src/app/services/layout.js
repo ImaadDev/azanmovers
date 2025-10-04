@@ -1,10 +1,12 @@
 export const metadata = {
-  title: "Best Moving Services in Saudi Arabia | Professional Packers & Movers Jeddah",
+  title: "🏆 Best Moving Services in Saudi Arabia | Top Movers in Jeddah | Professional Packers & Movers",
   description:
-    "Top-rated moving services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands of families and businesses. Get free quote today!",
+    "🏆 #1 Best Moving Services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands of families and businesses across Saudi Arabia. Get free quote today!",
   keywords: [
-    "moving services Saudi Arabia",
-    "best movers Jeddah",
+    "best moving services Saudi Arabia",
+    "best movers in Jeddah",
+    "top moving services Saudi Arabia",
+    "top movers Jeddah",
     "house moving services Saudi Arabia",
     "office relocation Jeddah",
     "furniture dismantling Saudi Arabia",
@@ -12,13 +14,19 @@ export const metadata = {
     "storage solutions Saudi Arabia",
     "professional movers Jeddah",
     "affordable moving services Saudi Arabia",
-    "reliable packers and movers Jeddah"
+    "reliable packers and movers Jeddah",
+    "number 1 moving services Saudi Arabia",
+    "leading movers Jeddah",
+    "premium moving services Saudi Arabia",
+    "expert movers Jeddah",
+    "trusted moving services Saudi Arabia",
+    "top packers and movers Jeddah"
   ],
   robots: "index, follow",
   openGraph: {
-    title: "Best Moving Services in Saudi Arabia | Professional Packers & Movers",
+    title: "🏆 Best Moving Services in Saudi Arabia | Top Movers in Jeddah | Professional Packers & Movers",
     description:
-      "Top-rated moving services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands of families and businesses.",
+      "🏆 #1 Best Moving Services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands of families and businesses across Saudi Arabia.",
     url: "https://www.azanmovers.com/services",
     siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
     type: "website",
@@ -26,9 +34,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Moving Services in Saudi Arabia | Professional Packers & Movers",
+    title: "🏆 Best Moving Services in Saudi Arabia | Top Movers in Jeddah | Professional Packers & Movers",
     description:
-      "Top-rated moving services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Get free quote today!",
+      "🏆 #1 Best Moving Services in Saudi Arabia! Professional house moving, office relocation, furniture dismantling, packing, storage solutions in Jeddah. Trusted by thousands! Get free quote today!",
     images: ["https://www.azanmovers.com/azanmovers-logo.png"]
   },
 };

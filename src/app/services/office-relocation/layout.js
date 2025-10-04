@@ -46,18 +46,34 @@ const breadcrumbData = {
 };
 
 export const metadata = {
-  title: "Office Relocation Services in Saudi Arabia | Azan Packers & Movers",
+  title: "🏆 Best Office Relocation Services in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Professional office relocation services in Saudi Arabia by Azan Packers & Movers. Ensure minimal business disruption with our efficient moving solutions.",
+    "🏆 #1 Best Office Relocation Services in Saudi Arabia! Professional office relocation services in Jeddah by Azan Packers & Movers. Ensure minimal business disruption with our efficient moving solutions. Trusted by businesses across Saudi Arabia!",
+  keywords: [
+    "best office relocation services Saudi Arabia",
+    "best office movers in Jeddah",
+    "top office moving company Saudi Arabia",
+    "professional office movers Jeddah",
+    "office relocation services Saudi Arabia",
+    "business moving Jeddah",
+    "commercial moving services Saudi Arabia",
+    "office shifting Jeddah",
+    "corporate moving Saudi Arabia",
+    "office moving company Jeddah",
+    "best commercial movers Saudi Arabia",
+    "top office movers Jeddah",
+    "professional business moving Saudi Arabia",
+    "reliable office movers Jeddah"
+  ],
   canonical: "https://www.azanmovers.com/services/office-relocation",
   robots: "index, follow",
   openGraph: {
     type: "article",
-    title: "Office Relocation Services in Saudi Arabia | Azan Packers & Movers",
+    title: "🏆 Best Office Relocation Services in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Professional office relocation services in Saudi Arabia by Azan Packers & Movers. Ensure minimal business disruption with our efficient moving solutions.",
+      "🏆 #1 Best Office Relocation Services in Saudi Arabia! Professional office relocation services in Jeddah by Azan Packers & Movers. Ensure minimal business disruption with our efficient moving solutions. Trusted by businesses across Saudi Arabia!",
     url: "https://www.azanmovers.com/services/office-relocation",
-    images: ["https://www.azanmovers.com/images/office-relocation.jpg"],
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
   script: [
     {
