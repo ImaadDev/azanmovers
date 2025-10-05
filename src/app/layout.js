@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "🏆 #1 Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia. Get free quote today!",
+    "Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia. Get free quote today!",
   keywords: [
     "best moving company Saudi Arabia",
     "best movers in Jeddah",
@@ -41,9 +41,9 @@ export const metadata = {
     "premium movers Jeddah"
   ],
   openGraph: {
-    title: "🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
+    title: "Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "🏆 #1 Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia.",
+      "Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia.",
     url: "https://www.azanmovers.com",
     siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
     images: [
@@ -59,9 +59,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "🏆 Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
+    title: "Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "🏆 #1 Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses.",
+      "Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses.",
     creator: "@AzanMovers",
     images: ["https://www.azanmovers.com/azanmovers-logo.png"],
   },
