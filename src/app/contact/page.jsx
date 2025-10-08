@@ -94,6 +94,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-4">
                 <strong>Address:</strong> Ibn Qasim Al Khawarizmi
                 Al Bawadi, Jeddah 23443, Saudi Arabia,
+                <a href="https://maps.app.goo.gl/MM8BkbSVEWEWXtXLA?g_st=awb">Get Direction</a>
               </div>
               <div className="flex items-start gap-4">
                 <strong>Opening Hours:</strong> 24 Hours Everyday

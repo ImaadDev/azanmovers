@@ -167,6 +167,7 @@ export default function Footer() {
                     <p className="font-semibold">Address</p>
                     <p>Ibn Qasim Al Khawarizmi
                     Al Bawadi, Jeddah 23443, Saudi Arabia,</p>
+                    <a href="https://maps.app.goo.gl/MM8BkbSVEWEWXtXLA?g_st=awb">Get Direction</a>
                   </div>
                 </div>
               </div>
