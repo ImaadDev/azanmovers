@@ -18,9 +18,9 @@ const montserrat = Montserrat({
 const GA_MEASUREMENT_ID = process.env.NEXT_GOOGLE_ANALYTICS_ID;
 
 export const metadata = {
-  title: "Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
+  title: "Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
   description:
-    "Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia. Get free quote today!",
+    "Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia. Get free quote today!",
   keywords: [
     "best moving company Saudi Arabia",
     "best movers in Jeddah",
@@ -64,7 +64,7 @@ export const metadata = {
   openGraph: {
     title: "Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
     description:
-      "Best Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia.",
+      "Moving Company in Saudi Arabia! Professional packers and movers in Jeddah offering house moving, office relocation, furniture dismantling, and storage services. Trusted by thousands of families and businesses across Saudi Arabia.",
     url: "https://www.azanmovers.com",
     siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
     images: [
