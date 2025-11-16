@@ -1,6 +1,47 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Professional Packing & Unpacking Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+  description: "Comprehensive packing and unpacking services in Saudi Arabia. Expert movers in Jeddah using high-quality materials for safe transport of fragile items, furniture, and household goods. Get free quote!",
+  keywords: [
+    "packing services saudi arabia",
+    "unpacking services jeddah",
+    "professional packers saudi arabia",
+    "fragile item packing jeddah",
+    "household packing saudi arabia",
+    "moving boxes jeddah",
+    "bubble wrap services saudi arabia",
+    "expert unpacking jeddah",
+    "safe packing materials saudi arabia",
+    "azan packing services",
+    "best packers and movers jeddah"
+  ],
+  openGraph: {
+    title: "Professional Packing & Unpacking Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Comprehensive packing and unpacking services in Saudi Arabia. Expert movers in Jeddah using high-quality materials for safe transport of fragile items, furniture, and household goods.",
+    url: "https://www.azanmovers.com/services/packing",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/unload.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional packing and unpacking services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Packing & Unpacking Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Comprehensive packing and unpacking services in Saudi Arabia. Expert movers in Jeddah using high-quality materials for safe transport of fragile items, furniture, and household goods.",
+    images: ["https://www.azanmovers.com/unload.jpg"]
+  },
+  robots: "index, follow"
+};
+
 export default function PackingServices() {
 
   return (

@@ -1,6 +1,45 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Secure Storage Solutions in Saudi Arabia | Flexible Storage Jeddah | Azan Packers & Movers",
+  description: "Reliable and secure storage solutions in Saudi Arabia. Climate-controlled facilities in Jeddah for short-term and long-term storage of your belongings. Get free quote today!",
+  keywords: [
+    "storage solutions saudi arabia",
+    "secure storage jeddah",
+    "flexible storage saudi arabia",
+    "climate controlled storage jeddah",
+    "long term storage saudi arabia",
+    "short term storage jeddah",
+    "belongings storage saudi arabia",
+    "azan storage services",
+    "best storage facilities jeddah"
+  ],
+  openGraph: {
+    title: "Secure Storage Solutions in Saudi Arabia | Flexible Storage Jeddah | Azan Packers & Movers",
+    description: "Reliable and secure storage solutions in Saudi Arabia. Climate-controlled facilities in Jeddah for short-term and long-term storage of your belongings.",
+    url: "https://www.azanmovers.com/services/storage",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Furniture.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Secure storage solutions in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Secure Storage Solutions in Saudi Arabia | Flexible Storage Jeddah | Azan Packers & Movers",
+    description: "Reliable and secure storage solutions in Saudi Arabia. Climate-controlled facilities in Jeddah for short-term and long-term storage of your belongings.",
+    images: ["https://www.azanmovers.com/Furniture.jpg"]
+  },
+  robots: "index, follow"
+};
+
 export default function StorageSolutions() {
 
   return (

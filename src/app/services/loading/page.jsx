@@ -1,7 +1,43 @@
-"use client";
-
 import Link from 'next/link';
 import Image from "next/image";
+
+export const metadata = {
+  title: "Professional Loading Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+  description: "Efficient and safe loading services in Saudi Arabia. Expert movers in Jeddah for careful handling and secure transport of your belongings. Get free quote today!",
+  keywords: [
+    "loading services saudi arabia",
+    "professional loaders jeddah",
+    "safe loading movers saudi arabia",
+    "belongings loading jeddah",
+    "transport loading saudi arabia",
+    "expert loading services jeddah",
+    "azan loading services",
+    "best loading movers saudi arabia"
+  ],
+  openGraph: {
+    title: "Professional Loading Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Efficient and safe loading services in Saudi Arabia. Expert movers in Jeddah for careful handling and secure transport of your belongings.",
+    url: "https://www.azanmovers.com/services/loading",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Load 1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional loading services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Loading Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Efficient and safe loading services in Saudi Arabia. Expert movers in Jeddah for careful handling and secure transport of your belongings.",
+    images: ["https://www.azanmovers.com/Load 1.jpg"]
+  },
+  robots: "index, follow"
+};
 
 export default function LoadingPage() {
   return (

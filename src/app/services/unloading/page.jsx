@@ -1,7 +1,43 @@
-"use client";
-
 import Link from 'next/link';
 import Image from 'next/image';
+
+export const metadata = {
+  title: "Professional Unloading Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+  description: "Careful and efficient unloading services in Saudi Arabia. Expert movers in Jeddah for gentle placement and quick settling at your new location. Get free quote today!",
+  keywords: [
+    "unloading services saudi arabia",
+    "professional unloaders jeddah",
+    "safe unloading movers saudi arabia",
+    "belongings unloading jeddah",
+    "gentle unloading saudi arabia",
+    "expert unloading services jeddah",
+    "azan unloading services",
+    "best unloading movers saudi arabia"
+  ],
+  openGraph: {
+    title: "Professional Unloading Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Careful and efficient unloading services in Saudi Arabia. Expert movers in Jeddah for gentle placement and quick settling at your new location.",
+    url: "https://www.azanmovers.com/services/unloading",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/unload 2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional unloading services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Unloading Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Careful and efficient unloading services in Saudi Arabia. Expert movers in Jeddah for gentle placement and quick settling at your new location.",
+    images: ["https://www.azanmovers.com/unload 2.jpg"]
+  },
+  robots: "index, follow"
+};
 
 export default function UnloadingPage() {
   return (

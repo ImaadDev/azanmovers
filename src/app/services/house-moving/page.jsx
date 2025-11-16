@@ -1,6 +1,48 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "House Moving Services in Saudi Arabia | Professional Movers Jeddah | Azan Packers & Movers",
+  description: "Expert house and villa moving services in Saudi Arabia. Professional packers and movers in Jeddah offering safe, efficient relocation with furniture dismantling, packing, and transportation. Get free quote today!",
+  keywords: [
+    "house moving saudi arabia",
+    "villa moving jeddah",
+    "professional house movers saudi arabia",
+    "house relocation services jeddah",
+    "safe house moving saudi arabia",
+    "furniture moving jeddah",
+    "home moving company saudi arabia",
+    "residential movers jeddah",
+    "house packing services saudi arabia",
+    "local house movers jeddah",
+    "azan house moving",
+    "best house movers saudi arabia"
+  ],
+  openGraph: {
+    title: "House Moving Services in Saudi Arabia | Professional Movers Jeddah | Azan Packers & Movers",
+    description: "Expert house and villa moving services in Saudi Arabia. Professional packers and movers in Jeddah offering safe, efficient relocation with furniture dismantling, packing, and transportation.",
+    url: "https://www.azanmovers.com/services/house-moving",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Truck 3.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional house moving services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "House Moving Services in Saudi Arabia | Professional Movers Jeddah | Azan Packers & Movers",
+    description: "Expert house and villa moving services in Saudi Arabia. Professional packers and movers in Jeddah offering safe, efficient relocation with furniture dismantling, packing, and transportation.",
+    images: ["https://www.azanmovers.com/Truck 3.jpg"]
+  },
+  robots: "index, follow"
+};
+
 export default function HouseMoving() {
 
   return (

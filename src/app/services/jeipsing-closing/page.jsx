@@ -1,7 +1,43 @@
-"use client";
-
 import Link from 'next/link';
 import Image from "next/image";
+
+export const metadata = {
+  title: "Jeipsing Closing Services in Saudi Arabia | Specialized Crate Sealing Jeddah | Azan Packers & Movers",
+  description: "Professional jeipsing closing services in Saudi Arabia. Expert sealing of wooden crates for safe and reliable transportation in Jeddah. Get free quote today!",
+  keywords: [
+    "jeipsing closing saudi arabia",
+    "wooden crate sealing jeddah",
+    "specialized crate services saudi arabia",
+    "secure cargo closing jeddah",
+    "international shipment packing saudi arabia",
+    "expert jeipsing closing jeddah",
+    "azan jeipsing services",
+    "best crate sealing saudi arabia"
+  ],
+  openGraph: {
+    title: "Jeipsing Closing Services in Saudi Arabia | Specialized Crate Sealing Jeddah | Azan Packers & Movers",
+    description: "Professional jeipsing closing services in Saudi Arabia. Expert sealing of wooden crates for safe and reliable transportation in Jeddah.",
+    url: "https://www.azanmovers.com/services/jeipsing-closing",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Truck.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional jeipsing closing services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jeipsing Closing Services in Saudi Arabia | Specialized Crate Sealing Jeddah | Azan Packers & Movers",
+    description: "Professional jeipsing closing services in Saudi Arabia. Expert sealing of wooden crates for safe and reliable transportation in Jeddah.",
+    images: ["https://www.azanmovers.com/Truck.jpg"]
+  },
+  robots: "index, follow"
+};
 
 export default function JeipsingClosingPage() {
   return (

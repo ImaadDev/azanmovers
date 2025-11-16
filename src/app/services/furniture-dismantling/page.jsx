@@ -1,6 +1,47 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Furniture Dismantling & Assembly Services in Saudi Arabia | Professional Movers Jeddah | Azan Packers & Movers",
+  description: "Expert furniture dismantling and assembly services in Saudi Arabia. Professional movers in Jeddah for safe handling of beds, wardrobes, desks, and office furniture. Get free quote today!",
+  keywords: [
+    "furniture dismantling saudi arabia",
+    "furniture assembly jeddah",
+    "professional furniture movers saudi arabia",
+    "bed dismantling jeddah",
+    "wardrobe moving saudi arabia",
+    "desk assembly jeddah",
+    "office furniture dismantling saudi arabia",
+    "safe furniture handling jeddah",
+    "furniture relocation services saudi arabia",
+    "azan furniture services",
+    "best furniture movers jeddah"
+  ],
+  openGraph: {
+    title: "Furniture Dismantling & Assembly Services in Saudi Arabia | Professional Movers Jeddah | Azan Packers & Movers",
+    description: "Expert furniture dismantling and assembly services in Saudi Arabia. Professional movers in Jeddah for safe handling of beds, wardrobes, desks, and office furniture.",
+    url: "https://www.azanmovers.com/services/furniture-dismantling",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Furniture 3.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional furniture dismantling and assembly services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Furniture Dismantling & Assembly Services in Saudi Arabia | Professional Movers Jeddah | Azan Packers & Movers",
+    description: "Expert furniture dismantling and assembly services in Saudi Arabia. Professional movers in Jeddah for safe handling of beds, wardrobes, desks, and office furniture.",
+    images: ["https://www.azanmovers.com/Furniture 3.jpg"]
+  },
+  robots: "index, follow"
+};
+
 export default function FurnitureDismantling() {
 
   return (

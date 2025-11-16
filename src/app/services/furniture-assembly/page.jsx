@@ -1,6 +1,47 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Furniture Assembly & Installation Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+  description: "Professional furniture assembly and installation services in Saudi Arabia. Expert movers in Jeddah for sturdy setup of beds, wardrobes, desks, and office furniture. Get free quote today!",
+  keywords: [
+    "furniture assembly saudi arabia",
+    "furniture installation jeddah",
+    "professional furniture assemblers saudi arabia",
+    "bed assembly jeddah",
+    "wardrobe installation saudi arabia",
+    "desk setup jeddah",
+    "office furniture assembly saudi arabia",
+    "sturdy furniture installation jeddah",
+    "furniture setup services saudi arabia",
+    "azan furniture assembly",
+    "best furniture assemblers jeddah"
+  ],
+  openGraph: {
+    title: "Furniture Assembly & Installation Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Professional furniture assembly and installation services in Saudi Arabia. Expert movers in Jeddah for sturdy setup of beds, wardrobes, desks, and office furniture.",
+    url: "https://www.azanmovers.com/services/furniture-assembly",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Furniture 1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional furniture assembly and installation services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Furniture Assembly & Installation Services in Saudi Arabia | Expert Movers Jeddah | Azan Packers & Movers",
+    description: "Professional furniture assembly and installation services in Saudi Arabia. Expert movers in Jeddah for sturdy setup of beds, wardrobes, desks, and office furniture.",
+    images: ["https://www.azanmovers.com/Furniture 1.jpg"]
+  },
+  robots: "index, follow"
+};
+
 export default function FurnitureAssembly() {
 
   return (

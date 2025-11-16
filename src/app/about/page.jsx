@@ -1,5 +1,48 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "About Azan Packers & Movers - Leading Moving Company in Saudi Arabia | Professional Movers Jeddah",
+  description: "Discover Azan Packers & Movers, the trusted moving company in Saudi Arabia. Learn about our professional house moving, office relocation, and furniture dismantling services in Jeddah and across Saudi Arabia. Get to know our mission and values.",
+  keywords: [
+    "about azan movers",
+    "moving company saudi arabia",
+    "professional movers jeddah",
+    "house moving services saudi arabia",
+    "office relocation jeddah",
+    "furniture dismantling saudi arabia",
+    "trusted movers saudi arabia",
+    "relocation company jeddah",
+    "best movers in saudi arabia",
+    "azan packers and movers about",
+    "moving services jeddah",
+    "saudi arabia moving company history",
+    "professional relocation services saudi arabia"
+  ],
+  openGraph: {
+    title: "About Azan Packers & Movers - Leading Moving Company in Saudi Arabia | Professional Movers Jeddah",
+    description: "Discover Azan Packers & Movers, the trusted moving company in Saudi Arabia. Learn about our professional house moving, office relocation, and furniture dismantling services in Jeddah and across Saudi Arabia.",
+    url: "https://www.azanmovers.com/about",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/azanmovers-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Azan Packers & Movers - About Us"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Azan Packers & Movers - Leading Moving Company in Saudi Arabia | Professional Movers Jeddah",
+    description: "Discover Azan Packers & Movers, the trusted moving company in Saudi Arabia. Learn about our professional house moving, office relocation, and furniture dismantling services in Jeddah and across Saudi Arabia.",
+    images: ["https://www.azanmovers.com/azanmovers-logo.png"]
+  },
+  robots: "index, follow"
+};
+
 export default function AboutPage() {
   const structuredData = {
     "@context": "https://schema.org",

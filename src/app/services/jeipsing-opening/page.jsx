@@ -1,7 +1,43 @@
-"use client";
-
 import Link from 'next/link';
 import Image from "next/image";
+
+export const metadata = {
+  title: "Jeipsing Opening Services in Saudi Arabia | Specialized Crate Opening Jeddah | Azan Packers & Movers",
+  description: "Professional jeipsing opening services in Saudi Arabia. Expert handling of wooden crates for delicate and international cargo in Jeddah. Get free quote today!",
+  keywords: [
+    "jeipsing opening saudi arabia",
+    "wooden crate opening jeddah",
+    "specialized crate services saudi arabia",
+    "delicate cargo opening jeddah",
+    "international shipment unpacking saudi arabia",
+    "expert jeipsing opening jeddah",
+    "azan jeipsing services",
+    "best crate opening saudi arabia"
+  ],
+  openGraph: {
+    title: "Jeipsing Opening Services in Saudi Arabia | Specialized Crate Opening Jeddah | Azan Packers & Movers",
+    description: "Professional jeipsing opening services in Saudi Arabia. Expert handling of wooden crates for delicate and international cargo in Jeddah.",
+    url: "https://www.azanmovers.com/services/jeipsing-opening",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Truck.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional jeipsing opening services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jeipsing Opening Services in Saudi Arabia | Specialized Crate Opening Jeddah | Azan Packers & Movers",
+    description: "Professional jeipsing opening services in Saudi Arabia. Expert handling of wooden crates for delicate and international cargo in Jeddah.",
+    images: ["https://www.azanmovers.com/Truck.jpg"]
+  },
+  robots: "index, follow"
+};
 
 export default function JeipsingOpeningPage() {
   return (

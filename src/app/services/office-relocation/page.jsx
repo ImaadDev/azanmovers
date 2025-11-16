@@ -1,6 +1,47 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Office Relocation Services in Saudi Arabia | Commercial Movers Jeddah | Azan Packers & Movers",
+  description: "Professional office relocation services in Saudi Arabia. Expert commercial movers in Jeddah offering IT equipment handling, document security, and minimal downtime for businesses. Get free quote!",
+  keywords: [
+    "office relocation saudi arabia",
+    "commercial movers jeddah",
+    "business moving services saudi arabia",
+    "office relocation jeddah",
+    "corporate relocation saudi arabia",
+    "it equipment moving jeddah",
+    "document storage movers saudi arabia",
+    "minimal downtime relocation jeddah",
+    "professional office movers saudi arabia",
+    "azan office relocation",
+    "best commercial movers jeddah"
+  ],
+  openGraph: {
+    title: "Office Relocation Services in Saudi Arabia | Commercial Movers Jeddah | Azan Packers & Movers",
+    description: "Professional office relocation services in Saudi Arabia. Expert commercial movers in Jeddah offering IT equipment handling, document security, and minimal downtime for businesses.",
+    url: "https://www.azanmovers.com/services/office-relocation",
+    siteName: "Azan Packers & Movers - Best Movers in Saudi Arabia",
+    images: [
+      {
+        url: "https://www.azanmovers.com/Truck Stuff 2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional office relocation services in Saudi Arabia"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Office Relocation Services in Saudi Arabia | Commercial Movers Jeddah | Azan Packers & Movers",
+    description: "Professional office relocation services in Saudi Arabia. Expert commercial movers in Jeddah offering IT equipment handling, document security, and minimal downtime for businesses.",
+    images: ["https://www.azanmovers.com/Truck Stuff 2.jpg"]
+  },
+  robots: "index, follow"
+};
+
 export default function OfficeRelocation() {
 
   return (
