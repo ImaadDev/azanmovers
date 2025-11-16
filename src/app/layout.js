@@ -6,6 +6,7 @@ import { Montserrat } from "next/font/google"; // ✅ import font
 import WhatsAppButton from "../components/WhatsappButton";
 import { Analytics } from "@vercel/analytics/next";
 import CanonicalTag from "../components/CanonicalTag";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 // Load Montserrat (adjust weights & subsets as needed)
 const montserrat = Montserrat({
@@ -13,6 +14,8 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"], // add weights you need
   display: "swap",
 });
+
+const GA_MEASUREMENT_ID = process.env.NEXT_GOOGLE_ANALYTICS_ID;
 
 export const metadata = {
   title: "Best Moving Company in Saudi Arabia | Top Movers in Jeddah | Azan Packers & Movers",
@@ -180,7 +183,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* ✅ Apply font globally */}
       <body className={`${montserrat.className} flex flex-col min-h-screen`}>
-        <Analytics/>
+         {/* ✅ Google Analytics */}
+        <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
         <Header />
         <main className="flex-grow mt-10 md:mt-20">{children}</main>
         <WhatsAppButton/>
