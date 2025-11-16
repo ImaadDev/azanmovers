@@ -42,33 +42,7 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  const formRef = useRef();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
-
   const embededMap = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.8692533821627!2d39.1703762!3d21.5910261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d08e60d904d3%3A0x35244bf1c8a78a59!2sIbn%20Qasim%20Al%20Khawarizmi%2C%20Al%20Bawadi%2C%20Jeddah%2023443!5e0!3m2!1sen!2ssa!4v1758548605794!5m2!1sen!2ssa'
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID,
-        formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setSubmitStatus("success");
-          e.target.reset();
-        },
-        () => setSubmitStatus("error")
-      )
-      .finally(() => setIsSubmitting(false));
-  };
 
   return (
     <main className="relative overflow-hidden" style={{ backgroundColor: "#FFFCFB" }}>
