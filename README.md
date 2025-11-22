@@ -5,8 +5,9 @@ A modern, responsive website for Azan Movers, a professional moving and relocati
 ## Features
 
 - **Comprehensive Services**: House moving, office relocation, furniture dismantling/assembly, packing/unpacking, loading/unloading, storage, and specialized services like jeep sing opening/closing.
+- **Blog System**: Dynamic blog with Sanity CMS integration, auto-generated slugs, rich text content, and social sharing.
 - **Contact Integration**: Integrated contact forms and WhatsApp support.
-- **SEO Optimized**: Includes sitemap generation and canonical tags.
+- **SEO Optimized**: Includes sitemap generation, canonical tags, and structured data.
 - **Analytics**: Vercel Analytics integration.
 - **Responsive Design**: Mobile-first design using Tailwind CSS.
 
@@ -15,10 +16,11 @@ A modern, responsive website for Azan Movers, a professional moving and relocati
 - **Framework**: Next.js 15.5.3
 - **Frontend**: React 19.1.0
 - **Styling**: Tailwind CSS v4
+- **CMS**: Sanity
 - **Icons**: Lucide React, React Icons
 - **Email**: EmailJS for contact forms
 - **Linting**: ESLint
-- **Build Tool**: Turbopack
+- **Build Tool**: Webpack (production), Turbopack (development)
 
 ## Installation
 
@@ -43,7 +45,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Build
-Build the project for production:
+Build the project for production using Webpack:
 ```bash
 npm run build
 ```
@@ -60,10 +62,17 @@ Run ESLint to check code quality:
 npm run lint
 ```
 
+### Content Management
+The blog content is managed through Sanity Studio. To access the CMS:
+1. Run the development server
+2. Navigate to `/studio` to access Sanity Studio
+3. Create and manage blog posts with rich text, images, and metadata
+
 ## Project Structure
 
-- `src/app/`: Next.js app router pages
+- `src/app/`: Next.js app router pages and API routes
 - `src/components/`: Reusable React components
+- `src/sanity/`: Sanity CMS configuration and utilities
 - `public/`: Static assets (images, favicon, etc.)
 
 ## Deployment
