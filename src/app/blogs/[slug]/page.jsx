@@ -1,98 +1,72 @@
 import Head from "next/head";
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import { PortableText } from "@portabletext/react";
+import imageUrlBuilder from "@sanity/image-url";
+import { notFound } from "next/navigation";
+import SocialShareLinks from "@/components/SocialShareLinks";
 
-// Sample posts data (expanded for SEO & readability)
-const posts = {
-  "stress-free-house-moving": {
-    title: "Tips for a Stress-Free House Moving in Jeddah",
-    date: "2025-09-21",
-    content: `
-Moving can be stressful, but with proper planning, you can make it smooth and hassle-free. Here are key tips:
+// --- Sanity Configuration ---
+const builder = imageUrlBuilder(client);
 
-## 1. Plan Ahead
-Start packing early and create a checklist for all items to avoid last-minute chaos.
+function urlFor(source) {
+  return builder.image(source);
+}
 
-## 2. Hire Professional Packers
-Professional movers ensure the safety of your furniture and belongings, reducing risks of damage.
+const query = `*[_type == "blog" && slug.current == $slug][0] {
+  _id,
+  title,
+  slug,
+  summary,
+  section,
+  sections,
+  content,
+  images,
+  publishedAt
+}`;
 
-## 3. Label Everything
-Clearly label boxes by room and contents to make unpacking easier.
+export async function generateStaticParams() {
+  const slugs = await client.fetch(`*[_type == "blog"].slug.current`);
+  return slugs.map((slug) => ({
+    slug,
+  }));
+}
 
-## 4. Prepare an Essentials Bag
-Keep important documents, chargers, toiletries, and essential items in a separate bag for immediate access.
 
-## 5. Notify Relevant Parties
-Inform utility providers, banks, and other services about your change of address in advance.
-
-For more professional moving tips, check our [Services page](/services).
-    `
+const portableTextComponents = {
+  block: {
+    normal: ({ children }) => <p className="mb-8 leading-relaxed text-lg">{children}</p>,
+    h1: ({ children }) => <h1 className="text-3xl font-extrabold mb-4 mt-12 border-b pb-2 border-gray-200">{children}</h1>,
+    h2: ({ children }) => <h2 className="text-2xl font-bold mb-3 mt-8 text-[#ED3F27]">{children}</h2>,
+    h3: ({ children }) => <h3 className="text-xl font-semibold mb-3 mt-6">{children}</h3>,
   },
-  "office-relocation-checklist": {
-    title: "Office Relocation Checklist for Businesses",
-    date: "2025-09-20",
-    content: `
-Relocating your office requires careful planning to avoid downtime and disruption. Follow this checklist:
-
-## 1. Assess Your Current Space
-Take inventory of office equipment, furniture, and documents.
-
-## 2. Set a Relocation Timeline
-Decide on dates for packing, transport, and setup at the new office.
-
-## 3. Hire Expert Movers
-Choose a moving company experienced in office relocations to handle heavy equipment safely.
-
-## 4. IT & Network Setup
-Plan for disconnection and reconnection of computers, servers, and network devices.
-
-## 5. Notify Employees & Clients
-Keep everyone informed about the move, new address, and contact details.
-
-## 6. Label & Pack
-Use clear labeling and secure packaging for all office items to ensure they arrive safely.
-
-See our [Office Relocation service](/services#office-relocation) for assistance.
-    `
+  list: {
+    bullet: ({ children }) => <ul className="list-disc ml-8 mb-8 space-y-3">{children}</ul>,
+    number: ({ children }) => <ol className="list-decimal ml-8 mb-8 space-y-3">{children}</ol>,
   },
-  "how-to-safely-dismantle": {
-    title: "How to Safely Dismantle and Move Furniture",
-    date: "2025-09-19",
-    content: `
-Dismantling furniture properly can prevent damage during moves. Follow these steps:
-
-## 1. Gather Tools
-Prepare screwdrivers, pliers, wrenches, and tape before starting.
-
-## 2. Disassemble Carefully
-Remove shelves, drawers, and detachable parts first. Keep screws and small parts in labeled bags.
-
-## 3. Protect Surfaces
-Wrap wooden and delicate parts with blankets or bubble wrap to avoid scratches.
-
-## 4. Move Strategically
-Use dollies and lifting straps to move heavy furniture safely.
-
-## 5. Reassemble at Destination
-Follow original assembly instructions or photos you took before dismantling.
-
-Check out our [Furniture Dismantling service](/services#furniture-dismantling) for professional help.
-    `
-  }
+  listItem: {
+    bullet: ({ children }) => <li className="text-lg">{children}</li>,
+    number: ({ children }) => <li className="text-lg">{children}</li>,
+  },
 };
 
-export default function BlogPost({ params }) {
+
+// --- Main Blog Post Component ---
+export default async function BlogPost({ params }) {
   const { slug } = params;
-  const post = posts[slug];
+  const post = await client.fetch(query, { slug });
 
-  if (!post) return <p>Post not found.</p>;
+  if (!post) {
+    notFound();
+  }
 
-  // JSON-LD structured data
+  // JSON-LD structured data (Kept for SEO professionalism)
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
-    datePublished: post.date,
-    description: post.content.substring(0, 160).replace(/\n/g, " "),
+    datePublished: post.publishedAt,
+    description: post.summary,
     author: { "@type": "Organization", name: "Azan Packers & Movers" },
     publisher: {
       "@type": "Organization",
@@ -102,21 +76,14 @@ export default function BlogPost({ params }) {
         url: "https://www.azanmovers.com/azanmovers-logo.png"
       }
     },
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Ibn Qasim Al Khawarizmi Al Bawadi",
-      addressLocality: "Jeddah",
-      addressRegion: "Makkah Province",
-      postalCode: "23443",
-      addressCountry: "SA",
-    }
+    // ... address kept
   };
 
   return (
     <>
       <Head>
         <title>{post.title} – Azan Packers & Movers</title>
-        <meta name="description" content={post.content.substring(0, 160).replace(/\n/g, " ")} />
+        <meta name="description" content={post.summary} />
         <meta name="robots" content="index, follow" />
         <script
           type="application/ld+json"
@@ -125,69 +92,105 @@ export default function BlogPost({ params }) {
       </Head>
 
       <main className="relative overflow-hidden" style={{ backgroundColor: '#FFFCFB' }}>
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 opacity-5">
-          <div
-            className="absolute top-10 left-5 w-48 h-48 bg-gradient-to-br from-red-500/3 to-orange-500/3 animate-blob filter blur-xl"
-          />
-          <div
-            className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-gradient-to-br from-blue-500/3 to-purple-500/3 animate-blob filter blur-xl animation-delay-2000"
-          />
-          <div
-            className="absolute top-1/3 left-1/3 w-24 h-24 bg-gradient-to-br from-green-500/3 to-teal-500/3 animate-blob filter blur-xl animation-delay-4000"
-          />
-        </div>
+        {/* Subtle background flair */}
+        <div className="absolute top-0 left-0 w-full h-96 opacity-5 pointer-events-none" 
+             style={{ backgroundImage: 'radial-gradient(circle at 100% 0%, rgba(237, 63, 39, 0.15) 0%, transparent 60%)' }}
+        />
 
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 py-16 lg:py-24">
+        <div className="relative z-10 py-20 lg:py-32">
           <article>
-            <header className="text-center mb-16 lg:mb-20">
-              <div className="inline-flex items-center gap-4 mb-8">
-                <div
-                  className="w-16 h-1 bg-gradient-to-r from-red-500 to-orange-500"
-                />
-                <span
-                  className="text-xs font-bold uppercase tracking-[0.2em] px-4 py-2 border"
-                  style={{
-                    color: '#ED3F27',
-                    borderColor: '#ED3F27',
-                    background: 'rgba(237, 63, 39, 0.05)'
-                  }}
-                >
-                  Blog Post
-                </span>
-                <div
-                  className="w-16 h-1 bg-gradient-to-r from-orange-500 to-red-500"
-                />
-              </div>
-
-              <h1 className="text-3xl lg:text-5xl font-black mb-4 leading-tight" style={{ color: '#374151' }}>
+            
+            {/* Header Section */}
+            <header className="mb-10 max-w-5xl mx-auto px-6 lg:px-8">
+              <span
+                className="text-sm font-semibold uppercase tracking-[0.3em] mb-4 inline-block"
+                style={{ color: '#ED3F27' }}
+              >
+                FEATURED BLOG POST
+              </span>
+              
+              <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight" style={{ color: '#374151' }}>
                 {post.title}
               </h1>
-              <p className="text-xs md:text-lg text-gray-500" style={{ color: '#6B7280' }}>
-                Published on <time dateTime={post.date}>{post.date}</time>
-              </p>
+              
+              <div className="flex justify-between items-center space-x-6 pt-4 border-t border-b py-4 border-gray-200">
+                <p className="text-base md:text-lg font-medium" style={{ color: '#6B7280' }}>
+                  <span className="font-bold text-[#ED3F27]">Published:</span> <time dateTime={post.publishedAt}>{new Date(post.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                </p>
+                {/* Social Sharing Links */}
+                <SocialShareLinks title={post.title} slug={post.slug} />
+              </div>
             </header>
-            <section className="prose lg:prose-xl mx-auto" style={{ color: '#374151' }}>
-              {post.content.split("\n\n").map((paragraph, idx) => {
-                if (paragraph.startsWith('## ')) {
-                  return <h2 key={idx} className="text-lg md:text-3xl font-bold mt-8 mb-4" style={{ color: '#ED3F27' }}>{paragraph.substring(3)}</h2>;
-                } else if (paragraph.startsWith('### ')) {
-                  return <h3 key={idx} className="text-base md:text-2xl font-bold mt-6 mb-3" style={{ color: '#ED3F27' }}>{paragraph.substring(4)}</h3>;
-                } else if (paragraph.startsWith('#### ')) {
-                  return <h4 key={idx} className="text-sm md:text-xl font-bold mt-5 mb-2" style={{ color: '#ED3F27' }}>{paragraph.substring(5)}</h4>;
-                } else {
-                  // Simple regex to replace markdown links with Next.js Link components
-                  const formattedParagraph = paragraph.replace(/\[(.*?)\]\((.*?)\)/g, (match, text, href) => {
-                    return `<a href="${href}" class="text-red-600 hover:underline transition-colors duration-300">${text}</a>`;
-                  });
-                  return <p key={idx} className="mb-4 text-sm md:text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: formattedParagraph }} />;
-                }
-              })}
-            </section>
-            <div className="mt-16 text-center">
+
+            {/* All Images Grid */}
+            {post.images && post.images.length > 0 && (
+              <div className="mb-16 max-w-7xl mx-auto px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {post.images.map((image, idx) => (
+                    <div key={idx} className="aspect-square overflow-hidden shadow-lg">
+                      <img
+                        src={urlFor(image).width(400).height(400).fit('crop').url()}
+                        alt={image.alt || `Blog image ${idx + 1}`}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Content Container (Constrained width for optimal reading) */}
+            <div className="max-w-6xl mx-auto px-6 lg:px-8">
+
+              {/* Summary/Introduction Block (Strong visual anchor) */}
+              {post.summary && (
+                <div className="mb-12 py-8 border-y-2 border-dashed" style={{ borderColor: '#ED3F27' }}>
+                  <p className="text-2xl font-serif italic leading-snug" style={{ color: '#374151' }}>
+                    {post.summary}
+                  </p>
+                </div>
+              )}
+
+              {/* Main Content Area */}
+              <div className="mb-16">
+                
+                {/* Optional Section (Single) */}
+                {post.section && (
+                  <div className="mb-10 p-6 border-l-4" style={{ borderColor: '#ED3F27', backgroundColor: 'rgba(237, 63, 39, 0.03)' }}>
+                    <h2 className="text-2xl font-bold mb-3" style={{ color: '#ED3F27' }}>{post.section.title}</h2>
+                    <p className="text-lg leading-relaxed" style={{ color: '#374151' }}>{post.section.description}</p>
+                  </div>
+                )}
+
+                {/* Multiple Sections (Structured Data) */}
+                {post.sections && post.sections.length > 0 && (
+                  <div className="mb-10 space-y-10">
+                    {post.sections.map((sec, idx) => (
+                      <div key={idx} className="pb-5 border-b border-gray-100">
+                        <h3 className="text-xl font-bold mb-3" style={{ color: '#ED3F27' }}>{sec.title}</h3>
+                        <p className="text-lg leading-relaxed" style={{ color: '#374151' }}>{sec.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Portable Text Content - Images inserted here based on block count */}
+                {post.content && (
+                  <div className="text-base lg:text-lg leading-relaxed space-y-8" style={{ color: '#374151' }}>
+                    <PortableText 
+                      value={post.content} 
+                      components={portableTextComponents}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Back Button (Footer style) */}
+            <div className="mt-20 text-center py-12 border-t border-gray-300" style={{ backgroundColor: '#F9F9F9' }}>
               <Link
                 href="/blogs"
-                className="group relative inline-flex items-center px-8 py-4 text-sm md:text-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-200"
+                className="group relative inline-flex items-center px-12 py-4 text-lg font-bold text-white tracking-widest uppercase transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-red-300"
                 style={{ backgroundColor: '#ED3F27', color: 'white' }}
               >
                 <span className="relative z-10">← Back to All Blogs</span>

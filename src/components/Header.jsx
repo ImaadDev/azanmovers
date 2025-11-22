@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import azanmoversLogo from '../../public/azanmovers-logo.png';
 
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,6 +14,10 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
   const navRef = useRef(null);
+
+if(pathname.startsWith('/studio')){
+  return null;
+}
 
   const navigationItems = [
     { name: 'HOME', href: '/', active: pathname === '/' },
